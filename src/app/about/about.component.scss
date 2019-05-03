@@ -1,0 +1,23 @@
+@import '../colors';
+
+.about{
+    .body{
+      padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+    }
+    .row {
+      img {
+        width: 10rem;
+      }
+      .text {
+        text-align: center;
+        justify-content: center;
+        text-align: left;
+        font-style: italic;
+      }
+    }
+}
+.about-text {
+    color: $text-color;
+    text-align: left;
+    font-style: italic;
+}

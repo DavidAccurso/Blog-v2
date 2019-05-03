@@ -1,0 +1,23 @@
+<article>
+  <div class="card text-center">
+    <div class="card-header">
+      {{ title }}
+    </div>
+    <div class="card-body">
+      <img
+        [src]="imgPath"
+        alt="Img 1"
+        class="img-fluid news-img"
+      />
+      <p class="card-text">
+        {{ text }}
+      </p>
+      <a class="btn-link" routerLink="/details">Seguir leyendo...</a>
+    </div>
+    <div class="card-footer text-muted">
+      {{ daysAgo }}
+    </div>
+  </div>
+</article>
+
+<!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->

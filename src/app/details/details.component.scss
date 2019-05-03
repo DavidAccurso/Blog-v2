@@ -1,0 +1,24 @@
+@import '../colors';
+
+.details {
+    img {
+      width: 100%;
+      height: 200px;
+      filter: blur(.6);
+      filter: segapia(.9);
+      filter: brightness(.3);
+    }
+    .card-title {
+      text-align: center;
+    }
+    .card-title:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+    color: $text-color;
+    text-align: left;
+    font-style: italic;
+    .updated-text {
+      font-weight: bold;
+    }
+}
