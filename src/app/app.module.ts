@@ -12,6 +12,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
 import { notFoundComponent } from './Shared/notFound/notFound.component';
+import { PostServiceComponent } from './post-service/post-service.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,18 @@ import { notFoundComponent } from './Shared/notFound/notFound.component';
     FooterComponent,
     ArticleComponent,
     AboutComponent,
-    notFoundComponent
+    notFoundComponent,
+    PostServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    PostServiceComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 export class PostComponent {
-    constructor() {
+    constructor( ) {
         this._daysAgo = Math.random();
         this.daysAgo = "{{_daysAgo}} days ago.";
     }

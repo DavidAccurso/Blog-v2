@@ -24,10 +24,6 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "Home",
-    component: HomeComponent
-  },
-  {
     path: "",
     component: HomeComponent
   },
