@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from "@angular/common/http";
-// import { map } from "rxjs/operators";
 import { PostServiceComponent } from '../post-service/post-service.component';
 import { Post } from '../post';
 import { Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router'
+import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-article',
@@ -12,44 +12,26 @@ import { Observable } from 'rxjs';
 })
 export class ArticleComponent implements OnInit {
 
-  // constructor(private http: HttpClient) {
-  //   this.title = "Titulo post 3";
-  // }
   title: string;
   imgPath: string;
   daysAgo: string;
   text: string;
-  posts$: Observable<Post[]>;
+  // posts:Post[];
   post: Post;
 
   constructor(
     public postService: PostServiceComponent
-  ) {
-    this.post = postService.GetAllPosts();
-   }
+  ) { }
+  
   ngOnInit() {
-    // this.getRestItems();
+    this.post = this.postService.GetAllPosts()[0];
     const p: Post = this.post;
     this.imgPath = '../assets/paisaje-2.jpg';
     this.title = p.title;
     this.daysAgo = p.daysAgo;
     this.text = p.body;
+    // this.postService.getPosts().then(_posts => {
+    //   this.posts = _posts;
+    // })
   }
-
-
-
-  // restItems: any;
-  // restItemsUrl = "https://jsonplaceholder.typicode.com/posts/1";
-
-  // // Read all REST Items
-  // getRestItems(): void {
-  //   this.restItemsServiceGetRestItems().subscribe(restItems => {
-  //     this.restItems = restItems;
-  //     console.log(this.restItems);
-  //   });
-  // }
-  // // Rest Items Service: Read all REST Items
-  // restItemsServiceGetRestItems() {
-  //   return this.http.get<any[]>(this.restItemsUrl).pipe(map(data => data));
-  // }
 }

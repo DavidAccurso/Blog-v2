@@ -13,17 +13,35 @@ export class HomeComponent implements OnInit {
   title: string;
   posts: Post[];
   hasPosts: boolean = false;
-  
+  isLoading: boolean;
+  public postId: number = 1;
+
   constructor(
     public postService : PostServiceComponent
-  ) {
-    // this.posts = postService.GetAllPosts();
-    this.hasPosts = true;
-   }
+  ) {}
 
   ngOnInit() {
-    // if (this.posts.length > 0) {
-    //   this.hasPosts = true;
-    // }
+    this.postId = 1;
+    this.isLoading = true;
+    this.postService.getPosts().then(_posts => {
+      this.posts = _posts;
+      console.log(_posts);
+      alert(_posts);
+    })
+    .catch(error =>{
+      alert('err');
+      console.log(error);
+      this.isLoading = false;
+      })
+      .finally(() =>{
+        alert('fin');
+        if (this.posts && this.posts.length <= 0){
+          this.hasPosts = true;
+        }
+        this.isLoading = false;
+        
+      });
+      
+
   }
 }

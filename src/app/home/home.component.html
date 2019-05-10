@@ -7,10 +7,11 @@
         <h2>Bienvenido blog {{ title }}</h2>
       </div>
       <main class="blog-articles">
-        <div *ngIf="hasPosts">
-            <app-article ></app-article>
+        <div *ngIf="!!isLoading">Cargando...</div>
+        <div *ngIf="!!hasPosts && !isLoading">
+            <app-article [id]="postId"></app-article>
         </div>
-        <img src="#" alt="NO HAY POSTS :(" *ngIf="!hasPosts">
+        <img src="#" alt="NO HAY POSTS :(" *ngIf="!hasPosts && !isLoading">
       </main>
     </div>
   </div>
