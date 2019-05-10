@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleComponent } from '../article/article.component';
 import { PostServiceComponent } from '../post-service/post-service.component';
+import { Post } from '../post';
 
 @Component({
   selector: 'app-home',
@@ -9,15 +10,20 @@ import { PostServiceComponent } from '../post-service/post-service.component';
 })
 export class HomeComponent implements OnInit {
 
+  title: string;
+  posts: Post[];
+  hasPosts: boolean = false;
+  
   constructor(
     public postService : PostServiceComponent
-  ) { }
+  ) {
+    // this.posts = postService.GetAllPosts();
+    this.hasPosts = true;
+   }
 
   ngOnInit() {
-    this.title = "Primero";
-    this.title = this.postService.nombre;
+    // if (this.posts.length > 0) {
+    //   this.hasPosts = true;
+    // }
   }
-  
-  title: string;
-  
 }

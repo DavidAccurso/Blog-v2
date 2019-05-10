@@ -1,0 +1,23 @@
+.about .body {
+  padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+}
+
+.about .row img {
+  width: 10rem;
+}
+
+.about .row .text {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  font-style: italic;
+}
+
+.about-text {
+  color: #999;
+  text-align: left;
+  font-style: italic;
+}
+/*# sourceMappingURL=about.component.css.map */

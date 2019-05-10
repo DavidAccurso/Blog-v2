@@ -7,9 +7,10 @@
         <h2>Bienvenido blog {{ title }}</h2>
       </div>
       <main class="blog-articles">
-        <app-article></app-article>
-        <app-article></app-article>
-        <app-article></app-article>
+        <div *ngIf="hasPosts">
+            <app-article ></app-article>
+        </div>
+        <img src="#" alt="NO HAY POSTS :(" *ngIf="!hasPosts">
       </main>
     </div>
   </div>

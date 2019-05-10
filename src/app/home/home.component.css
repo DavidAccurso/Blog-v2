@@ -1,0 +1,19 @@
+main {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.principal img {
+  height: 10rem;
+  width: 100%;
+}
+
+.blog-articles article {
+  display: inline-block;
+  margin: 1px 4px;
+  max-width: 33%;
+}
+/*# sourceMappingURL=home.component.css.map */
