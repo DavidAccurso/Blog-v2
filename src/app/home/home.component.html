@@ -8,9 +8,9 @@
       </div>
       <main class="blog-articles">
         <div *ngIf="!!isLoading">Cargando...</div>
-        <div *ngIf="!!hasPosts && !isLoading">
-            <app-article [id]="postId"></app-article>
-        </div>
+        <!-- <div *ngIf="!!hasPosts && !isLoading"> -->
+            <app-article (onclick)="setSelectedPost(1)" [routerLink]="[ 'details', 'selectedPost.id']"></app-article>
+        <!-- </div> -->
         <img src="#" alt="NO HAY POSTS :(" *ngIf="!hasPosts && !isLoading">
       </main>
     </div>

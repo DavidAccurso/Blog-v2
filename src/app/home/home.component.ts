@@ -12,36 +12,41 @@ export class HomeComponent implements OnInit {
 
   title: string;
   posts: Post[];
-  hasPosts: boolean = false;
+  hasPosts = false;
   isLoading: boolean;
-  public postId: number = 1;
+  selectedPost: Post;
 
   constructor(
-    public postService : PostServiceComponent
+    public postService: PostServiceComponent
   ) {}
 
   ngOnInit() {
-    this.postId = 1;
-    this.isLoading = true;
-    this.postService.getPosts().then(_posts => {
-      this.posts = _posts;
-      console.log(_posts);
-      alert(_posts);
-    })
-    .catch(error =>{
-      alert('err');
-      console.log(error);
-      this.isLoading = false;
-      })
-      .finally(() =>{
-        alert('fin');
-        if (this.posts && this.posts.length <= 0){
-          this.hasPosts = true;
-        }
-        this.isLoading = false;
-        
-      });
-      
+    this.loadPosts();
+    // if (this.posts) {
+    //   this.selectedPost = this.posts[0];
+    // } else {
 
+    // }
+  }
+  public setSelectedPost(id: number): void {
+    this.selectedPost = this.posts.filter(w => { w.ID === id })[0];
+  }
+  private loadPosts(): void {
+    this.isLoading = true;
+    this.posts = this.postService.GetAllPosts();
+    // this.postService.getPosts()
+    // .then(po => {
+    //   this.posts = po;
+    //   console.log(po);
+    // })
+    // .catch(error => {
+    //   console.log(error);
+    //   })
+    // .finally(() => {
+    //     if (this.posts && this.posts.length <= 0) {
+    //       this.hasPosts = true;
+    //     }
+    //     this.isLoading = false;
+    //   });
   }
 }

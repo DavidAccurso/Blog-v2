@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { notFoundComponent } from './Shared/notFound/notFound.component';
 import { PostServiceComponent } from './post-service/post-service.component';
 import { FormsModule } from '@angular/forms';
+import { AuthorServiceComponent } from './post-service/author-service.Component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     ArticleComponent,
     AboutComponent,
     notFoundComponent,
-    PostServiceComponent
+    PostServiceComponent,
+    AuthorServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    PostServiceComponent
+    PostServiceComponent,
+    AuthorServiceComponent
   ],
   bootstrap: [AppComponent]
 })

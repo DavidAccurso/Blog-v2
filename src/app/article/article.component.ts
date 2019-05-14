@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { PostServiceComponent } from '../post-service/post-service.component';
 import { Post } from '../post';
-import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router'
-import { post } from 'selenium-webdriver/http';
+// import { Observable } from 'rxjs';
+// import { ActivatedRoute } from '@angular/router';
+// import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-article',
@@ -12,26 +12,28 @@ import { post } from 'selenium-webdriver/http';
 })
 export class ArticleComponent implements OnInit {
 
-  title: string;
-  imgPath: string;
-  daysAgo: string;
-  text: string;
-  // posts:Post[];
+  title = '';
+  imgPath = '';
+  daysAgo = '';
+  text = '';
   post: Post;
 
+  @Output()
+  public articlePostId: number = 0;
+  @Input()
+  public selectedPost: Post;
+
   constructor(
-    public postService: PostServiceComponent
+    private postService: PostServiceComponent
   ) { }
-  
   ngOnInit() {
-    this.post = this.postService.GetAllPosts()[0];
-    const p: Post = this.post;
-    this.imgPath = '../assets/paisaje-2.jpg';
-    this.title = p.title;
-    this.daysAgo = p.daysAgo;
-    this.text = p.body;
-    // this.postService.getPosts().then(_posts => {
-    //   this.posts = _posts;
-    // })
+    this.post = this.selectedPost; // this.postService.GetAllPosts()[0];
+    if (this.post) {
+      this.imgPath = '../assets/paisaje-2.jpg';
+      this.title = this.post.title;
+      this.daysAgo = this.post.daysAgo;
+      this.text = this.post.body;
+      this.articlePostId = this.post.ID;
+    }
   }
 }

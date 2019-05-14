@@ -11,54 +11,13 @@
     <div class="content-fluid">
       <div class="row">
         <div class="col-8"> <!-- autor posts -->
-          <article class="col">
-            <div class="card text-center">
-              <div class="card-header">
-                Header noticia
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Titulo noticia 1</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="./details.html" class="btn btn-link"
-                  >Seguir leyendo...</a
-                >
-              </div>
-              <div class="card-footer text-muted">
-                2 days ago asd
-              </div>
-            </div>
-          </article>
-          <article class="col">
-            <div class="card text-center">
-              <div class="card-header">
-                Header noticia
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Titulo noticia 2</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="./details.html" class="btn btn-link"
-                  >Seguir leyendo...</a
-                >
-              </div>
-              <div class="card-footer text-muted">
-                4 days ago
-              </div>
-            </div>
-          </article>
+          <app-article></app-article>
+          <app-article></app-article>
         </div>
         <div class="col-4"> <!-- autor info -->
           <div class="row">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              soluta commodi minus, qui libero dolorum consequuntur sapiente
-              autem explicabo repellendus perspiciatis consequatur unde ab
-              deserunt exercitationem laborum labore voluptates voluptas.
+              {{ authorInfo }}
             </p>
             <img [src]="imgPath" alt="img" />
           </div>
