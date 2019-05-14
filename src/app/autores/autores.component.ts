@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from '../post';
-import { PostServiceComponent } from '../post-service/post-service.component';
-import { AuthorServiceComponent } from '../post-service/author-service.Component';
+import { PostService } from '../post-service/post-service';
+import { AuthorService } from '../post-service/author-service';
+import { IPost } from '../IPost';
 
 @Component({
   selector: 'app-autores',
@@ -11,14 +11,14 @@ import { AuthorServiceComponent } from '../post-service/author-service.Component
 export class AutoresComponent implements OnInit {
 
   imgPath: string;
-  authorPosts: Post[];
+  authorPosts: IPost[];
   @Input()
   authorId: number;
   authorInfo: string;
 
   constructor(
-    private postService: PostServiceComponent,
-    private authorService: AuthorServiceComponent
+    private postService: PostService,
+    private authorService: AuthorService
     ) { }
 
   ngOnInit() {

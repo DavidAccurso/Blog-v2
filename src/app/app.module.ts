@@ -12,9 +12,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
 import { notFoundComponent } from './Shared/notFound/notFound.component';
-import { PostServiceComponent } from './post-service/post-service.component';
+import { PostService } from './post-service/post-service';
 import { FormsModule } from '@angular/forms';
-import { AuthorServiceComponent } from './post-service/author-service.Component';
+import { AuthorService } from './post-service/author-service';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,7 @@ import { AuthorServiceComponent } from './post-service/author-service.Component'
     ArticleComponent,
     AboutComponent,
     notFoundComponent,
-    PostServiceComponent,
-    AuthorServiceComponent
+    FormComponent
   ],
   imports: [
     BrowserModule,
@@ -37,8 +37,8 @@ import { AuthorServiceComponent } from './post-service/author-service.Component'
     FormsModule
   ],
   providers: [
-    PostServiceComponent,
-    AuthorServiceComponent
+    PostService,
+    AuthorService
   ],
   bootstrap: [AppComponent]
 })

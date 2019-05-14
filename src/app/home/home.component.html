@@ -7,11 +7,18 @@
         <h2>Bienvenido blog {{ title }}</h2>
       </div>
       <main class="blog-articles">
-        <div *ngIf="!!isLoading">Cargando...</div>
-        <!-- <div *ngIf="!!hasPosts && !isLoading"> -->
-            <app-article (onclick)="setSelectedPost(1)" [routerLink]="[ 'details', 'selectedPost.id']"></app-article>
-        <!-- </div> -->
-        <img src="#" alt="NO HAY POSTS :(" *ngIf="!hasPosts && !isLoading">
+        <div *ngIf="![isLoading]">Cargando...</div>
+        <div *ngIf="!![hasPosts] && [isLoading]">
+            <app-article 
+              *ngFor="let p of posts" 
+              [articlePost]="p">
+            </app-article>
+        </div>
+        <img 
+        src="#" 
+        alt="NO HAY POSTS :(" 
+        *ngIf="![hasPosts] && ![isLoading]"
+        >
       </main>
     </div>
   </div>

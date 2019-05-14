@@ -12,7 +12,9 @@
       <p class="card-text">
         {{ text }}
       </p>
-      <a class="btn-link" routerLink="/details">Seguir leyendo...</a>
+      <div *ngIf="this.articlePost">
+          <a class="btn-link" [routerLink]="['/details', id ]">Seguir leyendo...</a>
+      </div>
     </div>
     <div class="card-footer text-muted">
       {{ daysAgo }}
