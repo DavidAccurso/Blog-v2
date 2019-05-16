@@ -96,7 +96,7 @@ module.exports = "<main>\r\n  <h3 class=\"about title\">About...</h3>\r\n  <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about .body {\n  padding: 0.3rem 0.3rem 0.3rem 0.6rem; }\n\n.about .row img {\n  width: 10rem; }\n\n.about .row .text {\n  text-align: center;\n  justify-content: center;\n  text-align: left;\n  font-style: italic; }\n\n.about-text {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyL3NyY1xcYXBwXFxhYm91dFxcYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Fib3V0L0M6XFxVc2Vyc1xcZGF2aWQubWF0aWFzLmFjY3Vyc29cXERvY3VtZW50c1xcRGF2XFxBbmd1bGFyXFxQcm9qZWN0byBjdXJzbyBhbmd1bGFyIC0gYmxvZ1xcQmxvZy12Mi9zcmNcXGFwcFxcX2NvbG9ycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBRU0sb0NBQW9DLEVBQUE7O0FBRjFDO0VBTVEsWUFBWSxFQUFBOztBQU5wQjtFQVNRLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsZ0JBQWdCO0VBQ2hCLGtCQUFrQixFQUFBOztBQUkxQjtFQUNJLFdDbkJhO0VEb0JiLGdCQUFnQjtFQUNoQixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vY29sb3JzJztcclxuXHJcbi5hYm91dHtcclxuICAgIC5ib2R5e1xyXG4gICAgICBwYWRkaW5nOiAwLjNyZW0gMC4zcmVtIDAuM3JlbSAwLjZyZW07XHJcbiAgICB9XHJcbiAgICAucm93IHtcclxuICAgICAgaW1nIHtcclxuICAgICAgICB3aWR0aDogMTByZW07XHJcbiAgICAgIH1cclxuICAgICAgLnRleHQge1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgICAgfVxyXG4gICAgfVxyXG59XHJcbi5hYm91dC10ZXh0IHtcclxuICAgIGNvbG9yOiAkdGV4dC1jb2xvcjtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iLCIkdGV4dC1jb2xvcjogIzk5OTtcclxuJGJhY2tncm91bmQtY29sb3I6ICNmOWY5Zjk7XHJcbiRib3JkZXItY29sb3I6ICNlNWU1ZTU7Il19 */"
+module.exports = ".about .body {\n  padding: 0.3rem 0.3rem 0.3rem 0.6rem; }\n\n.about .row img {\n  width: 10rem; }\n\n.about .row .text {\n  text-align: center;\n  justify-content: center;\n  text-align: left;\n  font-style: italic; }\n\n.about-text {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyXFxCbG9nLXYyL3NyY1xcYXBwXFxhYm91dFxcYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Fib3V0L0M6XFxVc2Vyc1xcZGF2aWQubWF0aWFzLmFjY3Vyc29cXERvY3VtZW50c1xcRGF2XFxBbmd1bGFyXFxQcm9qZWN0byBjdXJzbyBhbmd1bGFyIC0gYmxvZ1xcQmxvZy12MlxcQmxvZy12Mi9zcmNcXGFwcFxcX2NvbG9ycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBRU0sb0NBQW9DLEVBQUE7O0FBRjFDO0VBTVEsWUFBWSxFQUFBOztBQU5wQjtFQVNRLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsZ0JBQWdCO0VBQ2hCLGtCQUFrQixFQUFBOztBQUkxQjtFQUNJLFdDbkJhO0VEb0JiLGdCQUFnQjtFQUNoQixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vY29sb3JzJztcclxuXHJcbi5hYm91dHtcclxuICAgIC5ib2R5e1xyXG4gICAgICBwYWRkaW5nOiAwLjNyZW0gMC4zcmVtIDAuM3JlbSAwLjZyZW07XHJcbiAgICB9XHJcbiAgICAucm93IHtcclxuICAgICAgaW1nIHtcclxuICAgICAgICB3aWR0aDogMTByZW07XHJcbiAgICAgIH1cclxuICAgICAgLnRleHQge1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgICAgfVxyXG4gICAgfVxyXG59XHJcbi5hYm91dC10ZXh0IHtcclxuICAgIGNvbG9yOiAkdGV4dC1jb2xvcjtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iLCIkdGV4dC1jb2xvcjogIzk5OTtcclxuJGJhY2tncm91bmQtY29sb3I6ICNmOWY5Zjk7XHJcbiRib3JkZXItY29sb3I6ICNlNWU1ZTU7Il19 */"
 
 /***/ }),
 
@@ -152,6 +152,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _Shared_notFound_notFound_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Shared/notFound/notFound.component */ "./src/app/Shared/notFound/notFound.component.ts");
 /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+/* harmony import */ var _form_form_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./form/form.component */ "./src/app/form/form.component.ts");
+
 
 
 
@@ -162,27 +164,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [
     {
-        path: "autor",
+        path: 'autor',
         component: _autores_autores_component__WEBPACK_IMPORTED_MODULE_3__["AutoresComponent"]
     },
     {
-        path: "details",
+        path: 'details/:id',
         component: _details_details_component__WEBPACK_IMPORTED_MODULE_4__["DetailsComponent"]
     },
     {
-        path: "about",
+        path: 'about',
         component: _about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"]
     },
     {
-        path: "home",
+        path: 'form',
+        component: _form_form_component__WEBPACK_IMPORTED_MODULE_8__["FormComponent"]
+    },
+    {
+        path: 'home',
         component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
     },
     {
-        path: "",
+        path: '',
         component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
     },
     {
-        path: "**",
+        path: '**',
         component: _Shared_notFound_notFound_component__WEBPACK_IMPORTED_MODULE_6__["notFoundComponent"]
     }
 ];
@@ -295,8 +301,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_article_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./article/article.component */ "./src/app/article/article.component.ts");
 /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
 /* harmony import */ var _Shared_notFound_notFound_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Shared/notFound/notFound.component */ "./src/app/Shared/notFound/notFound.component.ts");
-/* harmony import */ var _post_service_post_service_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./post-service/post-service.component */ "./src/app/post-service/post-service.component.ts");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./post-service/post-service */ "./src/app/post-service/post-service.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./post-service/author-service */ "./src/app/post-service/author-service.ts");
+/* harmony import */ var _form_form_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form/form.component */ "./src/app/form/form.component.ts");
+
+
 
 
 
@@ -328,7 +338,7 @@ var AppModule = /** @class */ (function () {
                 _article_article_component__WEBPACK_IMPORTED_MODULE_11__["ArticleComponent"],
                 _about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"],
                 _Shared_notFound_notFound_component__WEBPACK_IMPORTED_MODULE_13__["notFoundComponent"],
-                _post_service_post_service_component__WEBPACK_IMPORTED_MODULE_14__["PostServiceComponent"]
+                _form_form_component__WEBPACK_IMPORTED_MODULE_17__["FormComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -337,7 +347,8 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"]
             ],
             providers: [
-                _post_service_post_service_component__WEBPACK_IMPORTED_MODULE_14__["PostServiceComponent"]
+                _post_service_post_service__WEBPACK_IMPORTED_MODULE_14__["PostService"],
+                _post_service_author_service__WEBPACK_IMPORTED_MODULE_16__["AuthorService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
@@ -356,7 +367,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<article>\r\n  <div class=\"card text-center\">\r\n    <div class=\"card-header\">\r\n      {{ title }}\r\n    </div>\r\n    <div class=\"card-body\">\r\n      <img\r\n        [src]=\"imgPath\"\r\n        alt=\"Img 1\"\r\n        class=\"img-fluid news-img\"\r\n      />\r\n      <p class=\"card-text\">\r\n        {{ text }}\r\n      </p>\r\n      <a class=\"btn-link\" routerLink=\"/details\">Seguir leyendo...</a>\r\n    </div>\r\n    <div class=\"card-footer text-muted\">\r\n      {{ daysAgo }}\r\n    </div>\r\n  </div>\r\n</article>\r\n\r\n<!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->\r\n"
+module.exports = "<article>\r\n  <div class=\"card text-center\">\r\n    <div class=\"card-header\">\r\n      {{ title }}\r\n    </div>\r\n    <div class=\"card-body\">\r\n      <img\r\n        [src]=\"imgPath\"\r\n        alt=\"Img 1\"\r\n        class=\"img-fluid news-img\"\r\n      />\r\n      <p class=\"card-text\">\r\n        {{ text }}\r\n      </p>\r\n      <div *ngIf=\"this.articlePost\">\r\n          <a class=\"btn-link\" [routerLink]=\"['/details', id ]\">Seguir leyendo...</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"card-footer text-muted\">\r\n      {{ daysAgo }}\r\n    </div>\r\n  </div>\r\n</article>\r\n\r\n<!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->\r\n"
 
 /***/ }),
 
@@ -367,7 +378,7 @@ module.exports = "<article>\r\n  <div class=\"card text-center\">\r\n    <div cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  height: 10rem;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXJ0aWNsZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjIvc3JjXFxhcHBcXGFydGljbGVcXGFydGljbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IsV0FBVyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXJ0aWNsZS9hcnRpY2xlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nIHtcclxuICAgIGhlaWdodDogMTByZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9Il19 */"
+module.exports = "img {\n  height: 10rem;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXJ0aWNsZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGFydGljbGVcXGFydGljbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IsV0FBVyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXJ0aWNsZS9hcnRpY2xlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nIHtcclxuICAgIGhlaWdodDogMTByZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9Il19 */"
 
 /***/ }),
 
@@ -383,45 +394,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleComponent", function() { return ArticleComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
 
 
 
 var ArticleComponent = /** @class */ (function () {
-    function ArticleComponent(http) {
-        this.http = http;
-        this.restItemsUrl = "https://jsonplaceholder.typicode.com/posts/1";
-        this.title = "Titulo post 3";
+    function ArticleComponent(postService) {
+        this.postService = postService;
+        this.title = '';
+        this.imgPath = '';
+        this.daysAgo = '';
+        this.text = '';
     }
     ArticleComponent.prototype.ngOnInit = function () {
-        this.getRestItems();
-        this.imgPath = "../assets/paisaje-2.jpg";
-        this.title = this.restItems['title'];
-        this.daysAgo = "4 days ago";
-        this.text = this.restItems['body'];
-        this.text = "asddsadssdasda";
+        this.post = this.articlePost;
+        if (this.post) {
+            this.id = this.post.id;
+        }
     };
-    // Read all REST Items
-    ArticleComponent.prototype.getRestItems = function () {
-        var _this = this;
-        this.restItemsServiceGetRestItems().subscribe(function (restItems) {
-            _this.restItems = restItems;
-            console.log(_this.restItems);
-        });
-    };
-    // Rest Items Service: Read all REST Items
-    ArticleComponent.prototype.restItemsServiceGetRestItems = function () {
-        return this.http.get(this.restItemsUrl).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) { return data; }));
-    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], ArticleComponent.prototype, "articlePost", void 0);
     ArticleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: "app-article",
+            selector: 'app-article',
             template: __webpack_require__(/*! ./article.component.html */ "./src/app/article/article.component.html"),
             styles: [__webpack_require__(/*! ./article.component.scss */ "./src/app/article/article.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_post_service__WEBPACK_IMPORTED_MODULE_2__["PostService"]])
     ], ArticleComponent);
     return ArticleComponent;
 }());
@@ -437,7 +438,7 @@ var ArticleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center autor\">\r\n    <div>\r\n      <div class=\"row\">\r\n        <div class=\"col text-left justify-content-center\">\r\n          <h3>Nombre autor</h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <hr />\r\n    <div class=\"content-fluid\">\r\n      <div class=\"row\">\r\n        <div class=\"col-8\">\r\n          <article class=\"col\">\r\n            <div class=\"card text-center\">\r\n              <div class=\"card-header\">\r\n                Header noticia\r\n              </div>\r\n              <div class=\"card-body\">\r\n                <h5 class=\"card-title\">Titulo noticia 1</h5>\r\n                <p class=\"card-text\">\r\n                  With supporting text below as a natural lead-in to additional\r\n                  content.\r\n                </p>\r\n                <a href=\"./details.html\" class=\"btn btn-link\"\r\n                  >Seguir leyendo...</a\r\n                >\r\n              </div>\r\n              <div class=\"card-footer text-muted\">\r\n                2 days ago asd\r\n              </div>\r\n            </div>\r\n          </article>\r\n          <article class=\"col\">\r\n            <div class=\"card text-center\">\r\n              <div class=\"card-header\">\r\n                Header noticia\r\n              </div>\r\n              <div class=\"card-body\">\r\n                <h5 class=\"card-title\">Titulo noticia 2</h5>\r\n                <p class=\"card-text\">\r\n                  With supporting text below as a natural lead-in to additional\r\n                  content.\r\n                </p>\r\n                <a href=\"./details.html\" class=\"btn btn-link\"\r\n                  >Seguir leyendo...</a\r\n                >\r\n              </div>\r\n              <div class=\"card-footer text-muted\">\r\n                4 days ago\r\n              </div>\r\n            </div>\r\n          </article>\r\n        </div>\r\n        <div class=\"col-4\">\r\n          <div class=\"row\">\r\n            <p>\r\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,\r\n              soluta commodi minus, qui libero dolorum consequuntur sapiente\r\n              autem explicabo repellendus perspiciatis consequatur unde ab\r\n              deserunt exercitationem laborum labore voluptates voluptas.\r\n            </p>\r\n            <img [src]=\"imgPath\" alt=\"img\" />\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</main>\r\n"
+module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center autor\">\r\n    <div>\r\n      <div class=\"row\">\r\n        <div class=\"col text-left justify-content-center\">\r\n          <h3>Nombre autor</h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <hr />\r\n    <div class=\"content-fluid\">\r\n      <div class=\"row\">\r\n        <div class=\"col-8\"> <!-- autor posts -->\r\n          <app-article></app-article>\r\n          <app-article></app-article>\r\n        </div>\r\n        <div class=\"col-4\"> <!-- autor info -->\r\n          <div class=\"row\">\r\n            <p>\r\n              {{ authorInfo }}\r\n            </p>\r\n            <img [src]=\"imgPath\" alt=\"img\" />\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</main>\r\n"
 
 /***/ }),
 
@@ -448,7 +449,7 @@ module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".autor img {\n  width: 100%;\n  height: 19rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXV0b3Jlcy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjIvc3JjXFxhcHBcXGF1dG9yZXNcXGF1dG9yZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSxXQUFXO0VBQ1gsYUFBYSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXV0b3Jlcy9hdXRvcmVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF1dG9yIHtcclxuICAgIGltZyB7XHJcbiAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICBoZWlnaHQ6IDE5cmVtO1xyXG4gICAgfVxyXG4gIH0iXX0= */"
+module.exports = ".autor img {\n  width: 100%;\n  height: 19rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXV0b3Jlcy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGF1dG9yZXNcXGF1dG9yZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSxXQUFXO0VBQ1gsYUFBYSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXV0b3Jlcy9hdXRvcmVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF1dG9yIHtcclxuICAgIGltZyB7XHJcbiAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICBoZWlnaHQ6IDE5cmVtO1xyXG4gICAgfVxyXG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -464,21 +465,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AutoresComponent", function() { return AutoresComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
+/* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-service/author-service */ "./src/app/post-service/author-service.ts");
+
+
 
 
 var AutoresComponent = /** @class */ (function () {
-    function AutoresComponent() {
-        this.imgPath = "../assets/apu.jpg";
+    function AutoresComponent(postService, authorService) {
+        this.postService = postService;
+        this.authorService = authorService;
     }
     AutoresComponent.prototype.ngOnInit = function () {
+        this.authorPosts = this.postService.GetAllPostsFromAuthor(this.authorId);
+        this.authorInfo = this.authorService.getInfo(this.authorId);
+        this.imgPath = this.authorService.getImg(this.authorId);
     };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], AutoresComponent.prototype, "authorId", void 0);
     AutoresComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-autores',
             template: __webpack_require__(/*! ./autores.component.html */ "./src/app/autores/autores.component.html"),
             styles: [__webpack_require__(/*! ./autores.component.scss */ "./src/app/autores/autores.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_post_service__WEBPACK_IMPORTED_MODULE_2__["PostService"],
+            _post_service_author_service__WEBPACK_IMPORTED_MODULE_3__["AuthorService"]])
     ], AutoresComponent);
     return AutoresComponent;
 }());
@@ -494,7 +508,7 @@ var AutoresComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid details\">\r\n  <div class=\"card bg-dark text-white\">\r\n    <img src=\"./Resources/paisaje-2.jpg\" class=\"card-img\" alt=\"...\" />\r\n    <div class=\"card-img-overlay\">\r\n      <h2 class=\"card-title\">Titulo del post</h2>\r\n    </div>\r\n  </div>\r\n  <p class=\"text\">\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque,\r\n    consectetur sint quisquam quia molestias nihil, quaerat iste unde similique\r\n    facilis amet labore fugit reiciendis quidem soluta repudiandae, odit quod?\r\n  </p>\r\n  <hr />\r\n  <p id=\"fromService\">\r\n    .....\r\n  </p>\r\n  <p class=\"updated-text\">Last updated 3 mins ago</p>\r\n  <p>\r\n    Date: dd/mm/aaaa - <a class=\"btn-link\" routerLink=\"/autor\">Autor</a>\r\n  </p>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid details\">\r\n  <div class=\"card bg-dark text-white\">\r\n    <img src=\"./Resources/paisaje-2.jpg\" class=\"card-img\" alt=\"...\" />\r\n    <div class=\"card-img-overlay\">\r\n      <h2 class=\"card-title\">Titulo del post</h2>\r\n      <p>{{ id }}</p>\r\n    </div>\r\n  </div>\r\n  <p class=\"text\">\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque,\r\n    consectetur sint quisquam quia molestias nihil, quaerat iste unde similique\r\n    facilis amet labore fugit reiciendis quidem soluta repudiandae, odit quod?\r\n  </p>\r\n  <hr />\r\n  <p id=\"fromService\">\r\n    .....\r\n  </p>\r\n  <p class=\"updated-text\">Last updated 3 mins ago</p>\r\n  <p>\r\n    Date: dd/mm/aaaa - <a class=\"btn-link\" routerLink=\"/autor\">Autor</a>\r\n  </p>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -505,7 +519,7 @@ module.exports = "<div class=\"container-fluid details\">\r\n  <div class=\"card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".details {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n  .details img {\n    width: 100%;\n    height: 200px;\n    -webkit-filter: blur(0.6);\n            filter: blur(0.6);\n    -webkit-filter: segapia(0.9);\n            filter: segapia(0.9);\n    -webkit-filter: brightness(0.3);\n            filter: brightness(0.3); }\n  .details .card-title {\n    text-align: center; }\n  .details .card-title:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    -webkit-filter: brightness(1.2);\n            filter: brightness(1.2); }\n  .details .updated-text {\n    font-weight: bold; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGV0YWlscy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjIvc3JjXFxhcHBcXGRldGFpbHNcXGRldGFpbHMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RldGFpbHMvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyL3NyY1xcYXBwXFxfY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFlSSxXQ2pCYTtFRGtCYixnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUE7RUFqQnRCO0lBRU0sV0FBVztJQUNYLGFBQWE7SUFDYix5QkFBZ0I7WUFBaEIsaUJBQWdCO0lBQ2hCLDRCQUFtQjtZQUFuQixvQkFBbUI7SUFDbkIsK0JBQXNCO1lBQXRCLHVCQUFzQixFQUFBO0VBTjVCO0lBU00sa0JBQWtCLEVBQUE7RUFUeEI7SUFZTSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBQTtFQWI3QjtJQW1CTSxpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2RldGFpbHMvZGV0YWlscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uL2NvbG9ycyc7XHJcblxyXG4uZGV0YWlscyB7XHJcbiAgICBpbWcge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgZmlsdGVyOiBibHVyKC42KTtcclxuICAgICAgZmlsdGVyOiBzZWdhcGlhKC45KTtcclxuICAgICAgZmlsdGVyOiBicmlnaHRuZXNzKC4zKTtcclxuICAgIH1cclxuICAgIC5jYXJkLXRpdGxlIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLmNhcmQtdGl0bGU6aG92ZXIge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbiAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxLjIpO1xyXG4gICAgfVxyXG4gICAgY29sb3I6ICR0ZXh0LWNvbG9yO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIC51cGRhdGVkLXRleHQge1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIH1cclxufSIsIiR0ZXh0LWNvbG9yOiAjOTk5O1xyXG4kYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuJGJvcmRlci1jb2xvcjogI2U1ZTVlNTsiXX0= */"
+module.exports = ".details {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n  .details img {\n    width: 100%;\n    height: 200px;\n    -webkit-filter: blur(0.6);\n            filter: blur(0.6);\n    -webkit-filter: segapia(0.9);\n            filter: segapia(0.9);\n    -webkit-filter: brightness(0.3);\n            filter: brightness(0.3); }\n  .details .card-title {\n    text-align: center; }\n  .details .card-title:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    -webkit-filter: brightness(1.2);\n            filter: brightness(1.2); }\n  .details .updated-text {\n    font-weight: bold; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGV0YWlscy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGRldGFpbHNcXGRldGFpbHMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RldGFpbHMvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyXFxCbG9nLXYyL3NyY1xcYXBwXFxfY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFlSSxXQ2pCYTtFRGtCYixnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUE7RUFqQnRCO0lBRU0sV0FBVztJQUNYLGFBQWE7SUFDYix5QkFBZ0I7WUFBaEIsaUJBQWdCO0lBQ2hCLDRCQUFtQjtZQUFuQixvQkFBbUI7SUFDbkIsK0JBQXNCO1lBQXRCLHVCQUFzQixFQUFBO0VBTjVCO0lBU00sa0JBQWtCLEVBQUE7RUFUeEI7SUFZTSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBQTtFQWI3QjtJQW1CTSxpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2RldGFpbHMvZGV0YWlscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uL2NvbG9ycyc7XHJcblxyXG4uZGV0YWlscyB7XHJcbiAgICBpbWcge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgZmlsdGVyOiBibHVyKC42KTtcclxuICAgICAgZmlsdGVyOiBzZWdhcGlhKC45KTtcclxuICAgICAgZmlsdGVyOiBicmlnaHRuZXNzKC4zKTtcclxuICAgIH1cclxuICAgIC5jYXJkLXRpdGxlIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLmNhcmQtdGl0bGU6aG92ZXIge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbiAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxLjIpO1xyXG4gICAgfVxyXG4gICAgY29sb3I6ICR0ZXh0LWNvbG9yO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIC51cGRhdGVkLXRleHQge1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIH1cclxufSIsIiR0ZXh0LWNvbG9yOiAjOTk5O1xyXG4kYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuJGJvcmRlci1jb2xvcjogI2U1ZTVlNTsiXX0= */"
 
 /***/ }),
 
@@ -521,22 +535,118 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailsComponent", function() { return DetailsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
+
+
 
 
 var DetailsComponent = /** @class */ (function () {
-    function DetailsComponent() {
+    function DetailsComponent(activatedRoute, service) {
+        this.activatedRoute = activatedRoute;
+        this.service = service;
+        var id;
+        // activatedRoute.paramMap.toPromise()<number>.then(a => {
+        //   this.id = a;
+        // })
     }
     DetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.isLoading = true;
+        this.service.getPost(this.id)
+            .then(function (p) {
+            _this.post = p;
+        })
+            .catch(function (error) {
+            console.log(error);
+        })
+            .finally(function () {
+            _this.isLoading = false;
+        });
+        console.log(this.post);
     };
+    DetailsComponent.prototype.ngOnChanges = function (changes) {
+        // Cada vez que cambie un input 
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], DetailsComponent.prototype, "id", void 0);
     DetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-details',
             template: __webpack_require__(/*! ./details.component.html */ "./src/app/details/details.component.html"),
             styles: [__webpack_require__(/*! ./details.component.scss */ "./src/app/details/details.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__["PostService"]])
     ], DetailsComponent);
     return DetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/form/form.component.html":
+/*!******************************************!*\
+  !*** ./src/app/form/form.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<form class=\"container-fluid\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n  <div class=\"form-group\">\r\n    <label for=\"autor\">Autor</label>\r\n    <select id=\"autor\" [(ngModel)]=\"autorID\">\r\n      <option \r\n        [value]=\"autor.id\" \r\n        *ngFor=\"let autor of autores\">\r\n        {{ autor.username }}\r\n      </option>\r\n    </select>\r\n    <small id=\"autorHelp\" class=\"form-text text-muted\">Seleccione autor</small>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"titulo\">Titulo</label>\r\n    <input type=\"text\" id=\"titulo\" [(ngModel)]=\"titulo\" />\r\n    <small id=\"titleHelp\" class=\"form-text text-muted\">Ingrese titulo</small>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <textarea\r\n      name=\"contenido\"\r\n      id=\"contenido\"\r\n      cols=\"30\"\r\n      rows=\"10\"\r\n      [(ngModel)]=\"contenido\"\r\n    >\r\n            .....\r\n        </textarea\r\n    >\r\n  </div>\r\n  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n</form>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/form/form.component.scss":
+/*!******************************************!*\
+  !*** ./src/app/form/form.component.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvcm0vZm9ybS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/form/form.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/form/form.component.ts ***!
+  \****************************************/
+/*! exports provided: FormComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormComponent", function() { return FormComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/author-service */ "./src/app/post-service/author-service.ts");
+
+
+
+var FormComponent = /** @class */ (function () {
+    function FormComponent(authorService) {
+        this.authorService = authorService;
+    }
+    FormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authorService.getAutores().then(function (a) {
+            _this.autores = a;
+        });
+    };
+    FormComponent.prototype.onSubmit = function () {
+    };
+    FormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-form',
+            template: __webpack_require__(/*! ./form.component.html */ "./src/app/form/form.component.html"),
+            styles: [__webpack_require__(/*! ./form.component.scss */ "./src/app/form/form.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_author_service__WEBPACK_IMPORTED_MODULE_2__["AuthorService"]])
+    ], FormComponent);
+    return FormComponent;
 }());
 
 
@@ -550,7 +660,7 @@ var DetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center principal\">\r\n    <div class=\"row justify-content-center\">\r\n      <div\r\n        class=\"jumbotron p-4 p-md-5 text-white rounded bg-dark col-12 col-md-12 col-sm-12\"\r\n      >\r\n        <h2>Bienvenido blog {{ title }}</h2>\r\n      </div>\r\n      <main class=\"blog-articles\">\r\n        <app-article></app-article>\r\n        <app-article></app-article>\r\n        <app-article></app-article>\r\n      </main>\r\n    </div>\r\n  </div>\r\n</main>\r\n"
+module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center principal\">\r\n    <div class=\"row justify-content-center\">\r\n      <div\r\n        class=\"jumbotron p-4 p-md-5 text-white rounded bg-dark col-12 col-md-12 col-sm-12\"\r\n      >\r\n        <h2>Bienvenido blog {{ title }}</h2>\r\n      </div>\r\n      <main class=\"blog-articles\">\r\n        <div *ngIf=\"![isLoading]\">Cargando...</div>\r\n        <div *ngIf=\"!![hasPosts] && [isLoading]\">\r\n            <app-article \r\n              *ngFor=\"let p of posts\" \r\n              [articlePost]=\"p\">\r\n            </app-article>\r\n        </div>\r\n        <img \r\n        src=\"#\" \r\n        alt=\"NO HAY POSTS :(\" \r\n        *ngIf=\"![hasPosts] && ![isLoading]\"\r\n        >\r\n      </main>\r\n    </div>\r\n  </div>\r\n</main>"
 
 /***/ }),
 
@@ -561,7 +671,7 @@ module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "main {\n  margin-bottom: 2rem; }\n\n.logo {\n  width: 150px; }\n\n.principal img {\n  height: 10rem;\n  width: 100%; }\n\n.blog-articles article {\n  display: inline-block;\n  margin: 1px 4px;\n  max-width: 33%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjIvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUIsRUFBQTs7QUFFckI7RUFDQSxZQUFZLEVBQUE7O0FBRVo7RUFFSSxhQUFhO0VBQ2IsV0FBVyxFQUFBOztBQUdmO0VBRUUscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYWluIHtcclxuICBtYXJnaW4tYm90dG9tOiAycmVtO1xyXG59XHJcbi5sb2dvIHtcclxud2lkdGg6IDE1MHB4O1xyXG59XHJcbi5wcmluY2lwYWwge1xyXG4gIGltZyB7XHJcbiAgICBoZWlnaHQ6IDEwcmVtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcbi5ibG9nLWFydGljbGVzIHtcclxuYXJ0aWNsZSB7IFxyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBtYXJnaW46IDFweCA0cHg7XHJcbiAgbWF4LXdpZHRoOiAzMyU7XHJcbn1cclxufSJdfQ== */"
+module.exports = "main {\n  margin-bottom: 2rem; }\n\n.logo {\n  width: 150px; }\n\n.principal img {\n  height: 10rem;\n  width: 100%; }\n\n.blog-articles article {\n  display: inline-block;\n  margin: 1px 4px;\n  max-width: 33%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUIsRUFBQTs7QUFFckI7RUFDQSxZQUFZLEVBQUE7O0FBRVo7RUFFSSxhQUFhO0VBQ2IsV0FBVyxFQUFBOztBQUdmO0VBRUUscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYWluIHtcclxuICBtYXJnaW4tYm90dG9tOiAycmVtO1xyXG59XHJcbi5sb2dvIHtcclxud2lkdGg6IDE1MHB4O1xyXG59XHJcbi5wcmluY2lwYWwge1xyXG4gIGltZyB7XHJcbiAgICBoZWlnaHQ6IDEwcmVtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcbi5ibG9nLWFydGljbGVzIHtcclxuYXJ0aWNsZSB7IFxyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBtYXJnaW46IDFweCA0cHg7XHJcbiAgbWF4LXdpZHRoOiAzMyU7XHJcbn1cclxufSJdfQ== */"
 
 /***/ }),
 
@@ -577,17 +687,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _post_service_post_service_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/post-service.component */ "./src/app/post-service/post-service.component.ts");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
 
 
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(postService) {
         this.postService = postService;
+        this.hasPosts = false;
     }
     HomeComponent.prototype.ngOnInit = function () {
-        this.title = "Primero";
-        this.title = this.postService.nombre;
+        this.loadPosts();
+    };
+    // public setSelectedPost(id: number): void {
+    //   this.selectedPost = this.posts.filter(w => { w.ID === id })[0];
+    // }
+    HomeComponent.prototype.loadPosts = function () {
+        var _this = this;
+        this.isLoading = true;
+        this.postService.GetAllPosts().then(function (p) {
+            _this.isLoading = false;
+            _this.posts = p.slice(0, 5);
+        })
+            .catch(function (er) {
+            alert('ERROR');
+        })
+            .finally(function () {
+            _this.isLoading = false;
+        });
     };
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -595,7 +722,7 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_post_service_component__WEBPACK_IMPORTED_MODULE_2__["PostServiceComponent"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_post_service__WEBPACK_IMPORTED_MODULE_2__["PostService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -604,56 +731,86 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/post-service/post-service.component.html":
-/*!**********************************************************!*\
-  !*** ./src/app/post-service/post-service.component.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  post-service works!\r\n</p>\r\n\r\n<input type=\"text\" [(ngModel)]=\"nombre\" >\r\n<div *ngIf=\"nombre == 'davi'\">\r\n  MUESTRO\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/post-service/post-service.component.scss":
-/*!**********************************************************!*\
-  !*** ./src/app/post-service/post-service.component.scss ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Bvc3Qtc2VydmljZS9wb3N0LXNlcnZpY2UuY29tcG9uZW50LnNjc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/post-service/post-service.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/post-service/post-service.component.ts ***!
-  \********************************************************/
-/*! exports provided: PostServiceComponent */
+/***/ "./src/app/post-service/author-service.ts":
+/*!************************************************!*\
+  !*** ./src/app/post-service/author-service.ts ***!
+  \************************************************/
+/*! exports provided: AuthorService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostServiceComponent", function() { return PostServiceComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthorService", function() { return AuthorService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 
 
-var PostServiceComponent = /** @class */ (function () {
-    function PostServiceComponent() {
-        this.nombre = 'Davi';
+
+var AuthorService = /** @class */ (function () {
+    function AuthorService(http) {
+        this.http = http;
+        this.urlUsers = 'https://jsonplaceholder.typicode.com/users';
     }
-    PostServiceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-post-service',
-            template: __webpack_require__(/*! ./post-service.component.html */ "./src/app/post-service/post-service.component.html"),
-            styles: [__webpack_require__(/*! ./post-service.component.scss */ "./src/app/post-service/post-service.component.scss")]
-        }),
+    AuthorService.prototype.getAutores = function () {
+        return this.http.get(this.urlUsers).toPromise();
+    };
+    AuthorService.prototype.getInfo = function (id) {
+        return 'INFO DEL AUTHOR HARDCODEADAA POR QUE NO TENGO INTERNET SOY POBRE :(';
+    };
+    AuthorService.prototype.getImg = function (id) {
+        return '../assets/apu.jpg';
+    };
+    AuthorService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], PostServiceComponent);
-    return PostServiceComponent;
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], AuthorService);
+    return AuthorService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/post-service/post-service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/post-service/post-service.ts ***!
+  \**********************************************/
+/*! exports provided: PostService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostService", function() { return PostService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var PostService = /** @class */ (function () {
+    function PostService(http) {
+        this.http = http;
+        this.urlPosts = 'https://jsonplaceholder.typicode.com/posts/';
+        this.urlUsers = 'https://jsonplaceholder.typicode.com/users';
+        this.urlPhotos = 'https://jsonplaceholder.typicode.com/photos';
+    }
+    PostService.prototype.getPost = function (d) {
+        return this.http.get(this.urlPosts + "/" + d).toPromise();
+    };
+    PostService.prototype.GetAllPosts = function () {
+        return this.http.get(this.urlPosts).toPromise();
+    };
+    PostService.prototype.GetAllPostsFromAuthor = function (authorID) {
+        var authorPosts;
+        // authorPosts = this.GetAllPosts();
+        return authorPosts.filter(function (p) { p.userId === authorID; });
+    };
+    PostService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], PostService);
+    return PostService;
 }());
 
 
@@ -810,7 +967,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\david.matias.accurso\Documents\Dav\Angular\Projecto curso angular - blog\Blog-v2\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\david.matias.accurso\Documents\Dav\Angular\Projecto curso angular - blog\Blog-v2\Blog-v2\src\main.ts */"./src/main.ts");
 
 
 /***/ })

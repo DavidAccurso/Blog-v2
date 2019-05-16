@@ -11,9 +11,8 @@ width: 150px;
   }
 }
 .blog-articles {
-article { 
-  display: inline-block;
-  margin: 1px 4px;
-  max-width: 33%;
-}
+  .art { 
+  // margin: 1px 4px;
+  display: block;
+  }
 }

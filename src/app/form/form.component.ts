@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Form  } from '@angular/forms';
 import { IAutores } from '../IAutores';
 import { AuthorService } from '../post-service/author-service';
 
@@ -19,13 +18,13 @@ export class FormComponent implements OnInit {
   constructor(
     private authorService: AuthorService
   ) { }
-
+  
   ngOnInit() {
     this.authorService.getAutores().then(a => {
       this.autores = a;
     })
   }
   onSubmit(){
-    
+  
   }
 }

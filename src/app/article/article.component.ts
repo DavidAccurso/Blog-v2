@@ -9,10 +9,10 @@ import { IPost } from '../IPost';
 })
 export class ArticleComponent implements OnInit {
 
-  title = '';
-  imgPath = '';
-  daysAgo = '';
-  text = '';
+  title = 'default Title';
+  imgPath = '../../assets/defaultUser.jpg';
+  daysAgo = '21 days ago.';
+  text = 'Lorem Impsumasdaskdjasdlkadslkasdkjaskljadsk';
   post: IPost;
   public id: number;
 

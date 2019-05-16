@@ -6,10 +6,11 @@
       >
         <h2>Bienvenido blog {{ title }}</h2>
       </div>
-      <main class="blog-articles">
+      <main class="container-fluid blog-articles">
         <div *ngIf="![isLoading]">Cargando...</div>
         <div *ngIf="!![hasPosts] && [isLoading]">
             <app-article 
+            class="art"
               *ngFor="let p of posts" 
               [articlePost]="p">
             </app-article>
