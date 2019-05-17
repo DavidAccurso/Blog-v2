@@ -1,6 +1,26 @@
-<form class="container-fluid" #f="ngForm" (ngSubmit)="onSubmit(f)">
+<form 
+  class="container-fluid" 
+  (ngSubmit)="onSubmit()"
+  #form="ngForm">
+
+  <!-- VALIDACIONES -->
+  <div class="input-group mb-3" [ngClass]="{'has-error': (!autorID || !contenido || !titulo), 'has-success': (autorID || contenido || titulo)}">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="icon-user"></i></span>
+      </div>
+      <div *ngIf="autorID === 0" class="help-block" style="color: #813838">
+          Please select an author!
+        </div>
+      <div *ngIf="contenido.length === 0" class="help-block" style="color: #813838">
+        Titulo is required!
+      </div>
+      <div *ngIf="titulo.length === 0" class="help-block" style="color: #813838">
+          Please complete the body!
+        </div>
+    </div>  
+
   <div class="form-group">
-    <label for="autor">Autor</label>
+    <label for="autor">Autor </label>
     <select id="autor" [(ngModel)]="autorID">
       <option 
         [value]="autor.id" 
@@ -8,12 +28,13 @@
         {{ autor.username }}
       </option>
     </select>
-    <small id="autorHelp" class="form-text text-muted">Seleccione autor</small>
   </div>
   <div class="form-group">
-    <label for="titulo">Titulo</label>
+    <label for="titulo">Titulo </label>
     <input type="text" id="titulo" [(ngModel)]="titulo" />
-    <small id="titleHelp" class="form-text text-muted">Ingrese titulo</small>
+    <div class="invalid-feedback" *ngIf="titulo.length === 0">
+        Please provide a valid state.
+    </div>
   </div>
   <div class="form-group">
     <textarea
@@ -23,9 +44,7 @@
       rows="10"
       [(ngModel)]="contenido"
     >
-            .....
-        </textarea
-    >
+    </textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
 </form>

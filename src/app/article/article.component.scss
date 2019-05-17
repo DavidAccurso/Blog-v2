@@ -7,6 +7,18 @@ img {
     vertical-align: bottom;
   }
 article { 
+  color: darkgray;
+
     margin: 5px 0px;
     display: block;
+    .loading {
+      width: 10rem;;
     }
+    .title {
+      font-weight: bold;
+      padding: 10px;
+    }
+    .daysAgo {
+
+    }
+  }

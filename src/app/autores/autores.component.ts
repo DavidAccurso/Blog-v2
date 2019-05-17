@@ -15,6 +15,7 @@ export class AutoresComponent implements OnInit {
   @Input()
   authorId: number;
   authorInfo: string;
+  public isLoading: boolean = false;
 
   constructor(
     private postService: PostService,
@@ -22,8 +23,23 @@ export class AutoresComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.authorPosts = this.postService.GetAllPostsFromAuthor(this.authorId);
+    this.authorPosts = this.GetAllPostsFromAuthor(this.authorId);
     this.authorInfo = this.authorService.getInfo(this.authorId);
     this.imgPath = this.authorService.getImg(this.authorId);
+  }
+
+  public GetAllPostsFromAuthor(authorID: number): IPost[] {
+    this.isLoading = true;
+    let postsFromAuthor: IPost[] = [];
+   this.postService.GetAllPosts().then(posts => {
+     postsFromAuthor = posts.filter(p => { p.userId === authorID})
+   })
+ .catch(error => { 
+   return error 
+  })
+  .finally(() => { 
+    this.isLoading = false 
+  }) 
+  return postsFromAuthor;
   }
 }

@@ -1,39 +1,39 @@
 <article>
-  <div 
-  class="container-fluid"
-  *ngIf="!!this.post || this.isLoading"
-  >  
-    <div class="card text-left">
-      <div class="card-header">
-        {{ title }}
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2">
-              <img
-              [src]="imgPath"
-              alt="Img 1"
-              class="img-fluid news-img"
-            />  
-          </div>
-          <div class="col-10">
-              <p class="card-text">
-                  {{ text }}
-                </p>
-                <div *ngIf="this.post" class="seguir-leyendo">
-                    <a class="btn-link" [routerLink]="['/details', id ]">Seguir leyendo...</a>
+  <div *ngIf="this.isLoading">
+    <img [src]="imgLoading" alt="Loading..." class="loading"/>
+  </div>
+  <div *ngIf="!this.isLoading">
+      <div class="container-fluid" *ngIf="this.hasPost">
+          <div class="card text-left">
+            <div class="card-header title">
+              {{ this.post.title }}
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <img [src]="imgPath" alt="Img 1" class="img-fluid news-img" />
                 </div>
+                <div class="col-10">
+                  <p class="card-text">
+                    {{ this.post.body }}
+                  </p>
+                  <div *ngIf="this.post" class="seguir-leyendo">
+                    <a class="btn-link" [routerLink]="['/details', id]"
+                      >Seguir leyendo...</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              {{ this.post.daysAgo }}
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-footer text-muted">
-        {{ daysAgo }}
-      </div>
-    </div>
-</div>
-<div *ngIf="!this.post">
-
-</div>
+        <div *ngIf="!this.post">
+          No se encontro el post :(
+        </div>
+  </div>
 </article>
 
 <!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->

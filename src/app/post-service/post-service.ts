@@ -20,9 +20,10 @@ export class PostService {
     return this.http.get<IPost[]>(this.urlPosts).toPromise();
   }
 
- public GetAllPostsFromAuthor(authorID: number): IPost[] {
-  let authorPosts: IPost[];
-  // authorPosts = this.GetAllPosts();
-  return authorPosts.filter(p => { p.userId === authorID });
+  public getDaysAgo(): string{
+    let _daysAgo: string;
+    let _days: number = Math.round((Math.random() * 100));
+    _daysAgo = `Publishied ${_days} ago.`;
+    return _daysAgo;
   }
 }

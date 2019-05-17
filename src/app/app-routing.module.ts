@@ -29,6 +29,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'form',
+    component: FormComponent
+  },
+  {
     path: '',
     component: HomeComponent
   },

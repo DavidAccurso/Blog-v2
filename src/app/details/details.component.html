@@ -1,22 +1,26 @@
 <div class="container-fluid details">
-  <div class="card bg-dark text-white">
-    <img src="./Resources/paisaje-2.jpg" class="card-img" alt="..." />
-    <div class="card-img-overlay">
-      <h2 class="card-title">Titulo del post</h2>
-      <p>{{ id }}</p>
+  <div *ngIf="this.isLoading">
+      <img [src]="imgPath" alt="Img 1" class="img-fluid news-img" />
+  </div>
+  <div *ngIf="!this.isLoading">
+    <div *ngIf="this.hasPost">
+        <div class="card bg-dark text-white text-center">
+            <img [src]="this.imgPath" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <h2 class="card-title">{{ this.post.title }}</h2>
+            </div>
+          </div>
+          <p class="text">
+            {{ this.post.body }}
+          </p>
+          <hr />
+          <p class="updated-text">{{ this.post.daysAgo }}</p>
+          <p>
+            Date: {{ this.date }} - <a class="btn-link" routerLink="/autor">{{ this.author.name }}</a>
+          </p>
+    </div>
+    <div *ngIf="!this.hasPost">
+      No se encontro el post :(
     </div>
   </div>
-  <p class="text">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque,
-    consectetur sint quisquam quia molestias nihil, quaerat iste unde similique
-    facilis amet labore fugit reiciendis quidem soluta repudiandae, odit quod?
-  </p>
-  <hr />
-  <p id="fromService">
-    .....
-  </p>
-  <p class="updated-text">Last updated 3 mins ago</p>
-  <p>
-    Date: dd/mm/aaaa - <a class="btn-link" routerLink="/autor">Autor</a>
-  </p>
 </div>

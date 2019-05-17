@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IAutores } from '../IAutores';
+import { NgForm, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { AuthorService } from '../post-service/author-service';
 
 @Component({
@@ -14,6 +15,7 @@ export class FormComponent implements OnInit {
   public titulo: string;
   public contenido: string;
   public selectedAutor: IAutores;
+  form: FormGroup;
 
   constructor(
     private authorService: AuthorService
@@ -25,6 +27,13 @@ export class FormComponent implements OnInit {
     })
   }
   onSubmit(){
-  
+    
+  }
+
+  setFormGroup(): void {
+    this.form = new FormGroup({
+      'titulo': new FormControl("", [Validators.required]),
+      'contenido': new FormControl("", [Validators.required])
+    });
   }
 }

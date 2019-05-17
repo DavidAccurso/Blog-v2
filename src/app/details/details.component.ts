@@ -1,9 +1,9 @@
 import { Component, OnInit, Input,
-  OnChanges, SimpleChange,
-  SimpleChanges } from '@angular/core';
+  OnChanges, SimpleChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { PostService } from '../post-service/post-service';
 import { IPost } from '../IPost';
+import { IAutores } from '../IAutores';
 
 @Component({
   selector: 'app-details',
@@ -14,38 +14,55 @@ export class DetailsComponent implements OnInit, OnChanges {
 
   constructor(
 
-    private activatedRoute: ActivatedRoute,
+    private activeRoute: ActivatedRoute,
     private service: PostService) 
     {
-      // activatedRoute.paramMap
-      // .toPromise()<Number>
-      // .then(a => {
-      //   this.postId = a;
-      // })   
+      // this.postId = parseInt(activatedRoute.snapshot.paramMap.get('id'));
     }
 
    @Input()
-   public id: number;
+  public id: number;
   postId: number;
   post: IPost;
+  author: IAutores;
   isLoading: boolean;
+  hasPost = false;
+  imgPath: string = '../../assets/paisaje.jpg';
+  date: number = Date.now();
+  private sub: any;
 
   ngOnInit() {
     this.isLoading = true;
 
-    this.service.getPost(this.id)
-    .then(p => {
-      this.post = p;
-    })
-    .catch(error => {
-      console.log(error);
-    })
-    .finally(() =>{
-      this.isLoading = false;
-    })
+    this.sub = this.activeRoute.params.subscribe(params => {
+      this.id = +params['id']; // (+) converts string 'id' to a number
+   });
+
+    if(this.id){
+      this.getPost(this.id);
+    }
+
     console.log(this.post);
   }
   public ngOnChanges(changes: SimpleChanges): void{
     // Cada vez que cambie un input 
+  }
+
+  private getPost(id: number) {
+    this.isLoading = true;
+    this.service.getPost(this.id)
+    .then(returnedPost => {
+      this.post = returnedPost;
+      this.post.daysAgo = this.service.getDaysAgo();
+    })
+    .catch(error => {
+      console.log(error);
+    })
+    .finally(() => {
+      this.isLoading = false;
+      if(this.post){
+        this.hasPost = true;
+      }
+    });
   }
 }

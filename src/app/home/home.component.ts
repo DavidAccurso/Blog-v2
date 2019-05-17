@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ArticleComponent } from '../article/article.component';
 import { PostService } from '../post-service/post-service';
 import { IPost } from '../IPost';
 
@@ -10,10 +9,11 @@ import { IPost } from '../IPost';
 })
 export class HomeComponent implements OnInit {
 
-  title: string;
+  title: string = 'del curso de Angular.'
   posts: IPost[];
   hasPosts = false;
   isLoading: boolean;
+  imgLoading = '../../assets/loading.gif';
   selectedPost: IPost;
 
   constructor(
@@ -24,18 +24,14 @@ export class HomeComponent implements OnInit {
     this.loadPosts();
   }
 
-  // public setSelectedPost(id: number): void {
-  //   this.selectedPost = this.posts.filter(w => { w.ID === id })[0];
-  // }
-
   private loadPosts(): void {
     this.isLoading = true;
-    this.postService.GetAllPosts().then(p => {
-      this.isLoading = false;
+    this.postService.GetAllPosts()
+    .then(p => {
       this.posts = p.slice(0,5);
     })
-    .catch(er => {
-      alert('ERROR');
+    .catch(error => {
+      console.log(error);
     })
     .finally(() =>{
       this.isLoading = false;
