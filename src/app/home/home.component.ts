@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
     this.isLoading = true;
     this.postService.GetAllPosts()
     .then(p => {
-      this.posts = p.slice(0,5);
+      this.posts = p;//.slice(0,5);
     })
     .catch(error => {
       console.log(error);

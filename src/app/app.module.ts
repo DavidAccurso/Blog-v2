@@ -16,6 +16,8 @@ import { PostService } from './post-service/post-service';
 import { FormsModule } from '@angular/forms';
 import { AuthorService } from './post-service/author-service';
 import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormAuthorComponent } from './form-author/form-author.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { FormComponent } from './form/form.component';
     ArticleComponent,
     AboutComponent,
     notFoundComponent,
-    FormComponent
+    FormComponent,
+    FormAuthorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     PostService,

@@ -23,6 +23,31 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/Post.ts":
+/*!*************************!*\
+  !*** ./src/app/Post.ts ***!
+  \*************************/
+/*! exports provided: Post */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Post", function() { return Post; });
+var Post = /** @class */ (function () {
+    function Post(userId, id, title, body, daysAgo) {
+        this.userId = userId;
+        this.id = id;
+        this.title = title;
+        this.body = body;
+        this.daysAgo = daysAgo;
+    }
+    return Post;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/Shared/notFound/notFound.component.html":
 /*!*********************************************************!*\
   !*** ./src/app/Shared/notFound/notFound.component.html ***!
@@ -30,7 +55,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n    <h1>ERROR 404 - NOT FOUND</h1>\r\n    <img [src]=\"imgPath\" alt=\"Not found image\">\r\n    <a [routerLink]=\"[ '/Home' ]\" routerLinkActive=\"active\">Go Home</a>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n    <h1>ERROR 404 - NOT FOUND</h1>\r\n    <img \r\n    [src]=\"imgPath\" \r\n    alt=\"Not found image\"\r\n    style=\"width: 50rem\">\r\n    <br>\r\n    <hr>\r\n    <a [routerLink]=\"[ '/home' ]\" routerLinkActive=\"active\">Go Home</a>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -50,7 +75,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var notFoundComponent = /** @class */ (function () {
     function notFoundComponent() {
-        this.imgPath = '../../assets/douh.png';
+        this.imgPath = '../../assets/difficultes.jpg';
     }
     notFoundComponent.prototype.ngOnInit = function () {
     };
@@ -96,7 +121,7 @@ module.exports = "<main>\r\n  <h3 class=\"about title\">About...</h3>\r\n  <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about .body {\n  padding: 0.3rem 0.3rem 0.3rem 0.6rem; }\n\n.about .row img {\n  width: 10rem; }\n\n.about .row .text {\n  text-align: center;\n  justify-content: center;\n  text-align: left;\n  font-style: italic; }\n\n.about-text {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyXFxCbG9nLXYyL3NyY1xcYXBwXFxhYm91dFxcYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Fib3V0L0M6XFxVc2Vyc1xcZGF2aWQubWF0aWFzLmFjY3Vyc29cXERvY3VtZW50c1xcRGF2XFxBbmd1bGFyXFxQcm9qZWN0byBjdXJzbyBhbmd1bGFyIC0gYmxvZ1xcQmxvZy12MlxcQmxvZy12Mi9zcmNcXGFwcFxcX2NvbG9ycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBRU0sb0NBQW9DLEVBQUE7O0FBRjFDO0VBTVEsWUFBWSxFQUFBOztBQU5wQjtFQVNRLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsZ0JBQWdCO0VBQ2hCLGtCQUFrQixFQUFBOztBQUkxQjtFQUNJLFdDbkJhO0VEb0JiLGdCQUFnQjtFQUNoQixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vY29sb3JzJztcclxuXHJcbi5hYm91dHtcclxuICAgIC5ib2R5e1xyXG4gICAgICBwYWRkaW5nOiAwLjNyZW0gMC4zcmVtIDAuM3JlbSAwLjZyZW07XHJcbiAgICB9XHJcbiAgICAucm93IHtcclxuICAgICAgaW1nIHtcclxuICAgICAgICB3aWR0aDogMTByZW07XHJcbiAgICAgIH1cclxuICAgICAgLnRleHQge1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgICAgfVxyXG4gICAgfVxyXG59XHJcbi5hYm91dC10ZXh0IHtcclxuICAgIGNvbG9yOiAkdGV4dC1jb2xvcjtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iLCIkdGV4dC1jb2xvcjogIzk5OTtcclxuJGJhY2tncm91bmQtY29sb3I6ICNmOWY5Zjk7XHJcbiRib3JkZXItY29sb3I6ICNlNWU1ZTU7Il19 */"
+module.exports = ".about .body {\n  padding: 0.3rem 0.3rem 0.3rem 0.6rem; }\n\n.about .row img {\n  width: 10rem; }\n\n.about .row .text {\n  text-align: center;\n  justify-content: center;\n  text-align: left;\n  font-style: italic; }\n\n.about-text {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQvQzpcXFVzZXJzXFxGdWxsIFNvbHV0aW9uc1xcRGVza3RvcFxcRGFcXHYzXFxCbG9nLXYyL3NyY1xcYXBwXFxhYm91dFxcYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Fib3V0L0M6XFxVc2Vyc1xcRnVsbCBTb2x1dGlvbnNcXERlc2t0b3BcXERhXFx2M1xcQmxvZy12Mi9zcmNcXGFwcFxcX2NvbG9ycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBRU0sb0NBQW9DLEVBQUE7O0FBRjFDO0VBTVEsWUFBWSxFQUFBOztBQU5wQjtFQVNRLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsZ0JBQWdCO0VBQ2hCLGtCQUFrQixFQUFBOztBQUkxQjtFQUNJLFdDbkJhO0VEb0JiLGdCQUFnQjtFQUNoQixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vY29sb3JzJztcclxuXHJcbi5hYm91dHtcclxuICAgIC5ib2R5e1xyXG4gICAgICBwYWRkaW5nOiAwLjNyZW0gMC4zcmVtIDAuM3JlbSAwLjZyZW07XHJcbiAgICB9XHJcbiAgICAucm93IHtcclxuICAgICAgaW1nIHtcclxuICAgICAgICB3aWR0aDogMTByZW07XHJcbiAgICAgIH1cclxuICAgICAgLnRleHQge1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgICAgfVxyXG4gICAgfVxyXG59XHJcbi5hYm91dC10ZXh0IHtcclxuICAgIGNvbG9yOiAkdGV4dC1jb2xvcjtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iLCIkdGV4dC1jb2xvcjogIzk5OTtcclxuJGJhY2tncm91bmQtY29sb3I6ICNmOWY5Zjk7XHJcbiRib3JkZXItY29sb3I6ICNlNWU1ZTU7Il19 */"
 
 /***/ }),
 
@@ -180,8 +205,16 @@ var routes = [
         component: _form_form_component__WEBPACK_IMPORTED_MODULE_8__["FormComponent"]
     },
     {
+        path: 'newAuthor',
+        component: _form_form_component__WEBPACK_IMPORTED_MODULE_8__["FormComponent"]
+    },
+    {
         path: 'home',
         component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+    },
+    {
+        path: 'form',
+        component: _form_form_component__WEBPACK_IMPORTED_MODULE_8__["FormComponent"]
     },
     {
         path: '',
@@ -305,6 +338,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./post-service/author-service */ "./src/app/post-service/author-service.ts");
 /* harmony import */ var _form_form_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form/form.component */ "./src/app/form/form.component.ts");
+/* harmony import */ var _form_author_form_author_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./form-author/form-author.component */ "./src/app/form-author/form-author.component.ts");
+
+
 
 
 
@@ -338,13 +374,15 @@ var AppModule = /** @class */ (function () {
                 _article_article_component__WEBPACK_IMPORTED_MODULE_11__["ArticleComponent"],
                 _about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"],
                 _Shared_notFound_notFound_component__WEBPACK_IMPORTED_MODULE_13__["notFoundComponent"],
-                _form_form_component__WEBPACK_IMPORTED_MODULE_17__["FormComponent"]
+                _form_form_component__WEBPACK_IMPORTED_MODULE_17__["FormComponent"],
+                _form_author_form_author_component__WEBPACK_IMPORTED_MODULE_18__["FormAuthorComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"]
             ],
             providers: [
                 _post_service_post_service__WEBPACK_IMPORTED_MODULE_14__["PostService"],
@@ -367,7 +405,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<article>\r\n  <div class=\"card text-center\">\r\n    <div class=\"card-header\">\r\n      {{ title }}\r\n    </div>\r\n    <div class=\"card-body\">\r\n      <img\r\n        [src]=\"imgPath\"\r\n        alt=\"Img 1\"\r\n        class=\"img-fluid news-img\"\r\n      />\r\n      <p class=\"card-text\">\r\n        {{ text }}\r\n      </p>\r\n      <div *ngIf=\"this.articlePost\">\r\n          <a class=\"btn-link\" [routerLink]=\"['/details', id ]\">Seguir leyendo...</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"card-footer text-muted\">\r\n      {{ daysAgo }}\r\n    </div>\r\n  </div>\r\n</article>\r\n\r\n<!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->\r\n"
+module.exports = "<article>\r\n  <div *ngIf=\"this.isLoading\">\r\n    <img [src]=\"imgLoading\" alt=\"Loading...\" class=\"loading\"/>\r\n  </div>\r\n  <div *ngIf=\"!this.isLoading\">\r\n      <div class=\"container-fluid\" *ngIf=\"this.hasPost\">\r\n          <div class=\"card text-left\">\r\n            <div class=\"card-header title\">\r\n              {{ this.post.title }}\r\n            </div>\r\n            <div class=\"card-body\">\r\n              <div class=\"row\">\r\n                <div class=\"col-2\">\r\n                  <img [src]=\"imgPath\" alt=\"Img 1\" class=\"img-fluid news-img\" />\r\n                </div>\r\n                <div class=\"col-10\">\r\n                  <p class=\"card-text\">\r\n                    {{ this.post.body }}\r\n                  </p>\r\n                  <div *ngIf=\"this.post\" class=\"seguir-leyendo\">\r\n                    <a class=\"btn-link\" [routerLink]=\"['/details', id]\"\r\n                      >Seguir leyendo...</a\r\n                    >\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"card-footer text-muted\">\r\n              {{ this.post.daysAgo }}\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div *ngIf=\"!this.post\">\r\n          No se encontro el post :(\r\n        </div>\r\n  </div>\r\n</article>\r\n\r\n<!-- https://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->\r\n\r\n<!-- <article>\r\n  <div class=\"card text-left\">\r\n    <div class=\"card-header\">\r\n      {{ title }}\r\n    </div>\r\n    <div class=\"card-body\">\r\n      <img\r\n        [src]=\"imgPath\"\r\n        alt=\"Img 1\"\r\n        class=\"img-fluid news-img\"\r\n      />\r\n      <p class=\"card-text\">\r\n        {{ text }}\r\n      </p>\r\n      <div *ngIf=\"this.articlePost\">\r\n          <a class=\"btn-link\" [routerLink]=\"['/details', id ]\">Seguir leyendo...</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"card-footer text-muted\">\r\n      {{ daysAgo }}\r\n    </div>\r\n  </div>\r\n</article>\r\n\r\nhttps://mmeopsat.ciostage.accenture.com/WorkTime/WMSSetup.aspx?Client=8225&WMU=1293728 -->\r\n"
 
 /***/ }),
 
@@ -378,7 +416,7 @@ module.exports = "<article>\r\n  <div class=\"card text-center\">\r\n    <div cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  height: 10rem;\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXJ0aWNsZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGFydGljbGVcXGFydGljbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IsV0FBVyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXJ0aWNsZS9hcnRpY2xlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nIHtcclxuICAgIGhlaWdodDogMTByZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9Il19 */"
+module.exports = "img {\n  height: 10rem;\n  width: 100%; }\n\n.seguir-leyendo {\n  vertical-align: bottom; }\n\narticle {\n  color: darkgray;\n  margin: 5px 0px;\n  display: block; }\n\narticle .loading {\n    width: 10rem; }\n\narticle .title {\n    font-weight: bold;\n    padding: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXJ0aWNsZS9DOlxcVXNlcnNcXEZ1bGwgU29sdXRpb25zXFxEZXNrdG9wXFxEYVxcdjNcXEJsb2ctdjIvc3JjXFxhcHBcXGFydGljbGVcXGFydGljbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IsV0FBVyxFQUFBOztBQUViO0VBRUUsc0JBQXNCLEVBQUE7O0FBRTFCO0VBQ0UsZUFBZTtFQUViLGVBQWU7RUFDZixjQUFjLEVBQUE7O0FBSmxCO0lBTU0sWUFBWSxFQUFBOztBQU5sQjtJQVNNLGlCQUFpQjtJQUNqQixhQUFhLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9hcnRpY2xlL2FydGljbGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpbWcge1xyXG4gICAgaGVpZ2h0OiAxMHJlbTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICAuc2VndWlyLWxleWVuZG8ge1xyXG4gICAgLy9EZWphciBlbiBwYXJ0ZSBpbmZlcmlvciBkZWwgYm9keVxyXG4gICAgdmVydGljYWwtYWxpZ246IGJvdHRvbTtcclxuICB9XHJcbmFydGljbGUgeyBcclxuICBjb2xvcjogZGFya2dyYXk7XHJcblxyXG4gICAgbWFyZ2luOiA1cHggMHB4O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICAubG9hZGluZyB7XHJcbiAgICAgIHdpZHRoOiAxMHJlbTs7XHJcbiAgICB9XHJcbiAgICAudGl0bGUge1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgcGFkZGluZzogMTBweDtcclxuICAgIH1cclxuICAgIC5kYXlzQWdvIHtcclxuXHJcbiAgICB9XHJcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -401,21 +439,45 @@ __webpack_require__.r(__webpack_exports__);
 var ArticleComponent = /** @class */ (function () {
     function ArticleComponent(postService) {
         this.postService = postService;
-        this.title = '';
-        this.imgPath = '';
-        this.daysAgo = '';
-        this.text = '';
+        this.imgPath = '../../assets/defaultUser.jpg';
+        this.imgLoading = '../../assets/loading.gif';
+        this.daysAgo = '21 days ago.';
+        this.isLoading = false;
+        this.hasPost = false;
     }
     ArticleComponent.prototype.ngOnInit = function () {
-        this.post = this.articlePost;
-        if (this.post) {
-            this.id = this.post.id;
+        this.isLoading = true;
+        this.hasPost = false;
+        if (this.postId) {
+            this.id = this.postId;
+            this.getPost(this.id);
         }
+        else {
+            this.isLoading = false;
+        }
+    };
+    ArticleComponent.prototype.getPost = function (id) {
+        var _this = this;
+        this.isLoading = true;
+        this.postService.getPost(this.id)
+            .then(function (returnedPost) {
+            _this.post = returnedPost;
+            _this.post.daysAgo = _this.postService.getDaysAgo();
+        })
+            .catch(function (error) {
+            console.log(error);
+        })
+            .finally(function () {
+            _this.isLoading = false;
+            if (_this.post) {
+                _this.hasPost = true;
+            }
+        });
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], ArticleComponent.prototype, "articlePost", void 0);
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], ArticleComponent.prototype, "postId", void 0);
     ArticleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-article',
@@ -449,7 +511,7 @@ module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".autor img {\n  width: 100%;\n  height: 19rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXV0b3Jlcy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGF1dG9yZXNcXGF1dG9yZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSxXQUFXO0VBQ1gsYUFBYSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXV0b3Jlcy9hdXRvcmVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF1dG9yIHtcclxuICAgIGltZyB7XHJcbiAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICBoZWlnaHQ6IDE5cmVtO1xyXG4gICAgfVxyXG4gIH0iXX0= */"
+module.exports = ".autor img {\n  width: 100%;\n  height: 19rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXV0b3Jlcy9DOlxcVXNlcnNcXEZ1bGwgU29sdXRpb25zXFxEZXNrdG9wXFxEYVxcdjNcXEJsb2ctdjIvc3JjXFxhcHBcXGF1dG9yZXNcXGF1dG9yZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSxXQUFXO0VBQ1gsYUFBYSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvYXV0b3Jlcy9hdXRvcmVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF1dG9yIHtcclxuICAgIGltZyB7XHJcbiAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICBoZWlnaHQ6IDE5cmVtO1xyXG4gICAgfVxyXG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -475,11 +537,27 @@ var AutoresComponent = /** @class */ (function () {
     function AutoresComponent(postService, authorService) {
         this.postService = postService;
         this.authorService = authorService;
+        this.isLoading = false;
     }
     AutoresComponent.prototype.ngOnInit = function () {
-        this.authorPosts = this.postService.GetAllPostsFromAuthor(this.authorId);
+        this.authorPosts = this.GetAllPostsFromAuthor(this.authorId);
         this.authorInfo = this.authorService.getInfo(this.authorId);
         this.imgPath = this.authorService.getImg(this.authorId);
+    };
+    AutoresComponent.prototype.GetAllPostsFromAuthor = function (authorID) {
+        var _this = this;
+        this.isLoading = true;
+        var postsFromAuthor = [];
+        this.postService.GetAllPosts().then(function (posts) {
+            postsFromAuthor = posts.filter(function (p) { p.userId === authorID; });
+        })
+            .catch(function (error) {
+            return error;
+        })
+            .finally(function () {
+            _this.isLoading = false;
+        });
+        return postsFromAuthor;
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
@@ -508,7 +586,7 @@ var AutoresComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid details\">\r\n  <div class=\"card bg-dark text-white\">\r\n    <img src=\"./Resources/paisaje-2.jpg\" class=\"card-img\" alt=\"...\" />\r\n    <div class=\"card-img-overlay\">\r\n      <h2 class=\"card-title\">Titulo del post</h2>\r\n      <p>{{ id }}</p>\r\n    </div>\r\n  </div>\r\n  <p class=\"text\">\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque,\r\n    consectetur sint quisquam quia molestias nihil, quaerat iste unde similique\r\n    facilis amet labore fugit reiciendis quidem soluta repudiandae, odit quod?\r\n  </p>\r\n  <hr />\r\n  <p id=\"fromService\">\r\n    .....\r\n  </p>\r\n  <p class=\"updated-text\">Last updated 3 mins ago</p>\r\n  <p>\r\n    Date: dd/mm/aaaa - <a class=\"btn-link\" routerLink=\"/autor\">Autor</a>\r\n  </p>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid details\">\r\n  <div *ngIf=\"this.isLoading\">\r\n      <img [src]=\"imgPath\" alt=\"Img 1\" class=\"img-fluid news-img\" />\r\n  </div>\r\n  <div *ngIf=\"!this.isLoading\">\r\n    <div *ngIf=\"this.hasPost\">\r\n        <div class=\"card bg-dark text-white text-center\">\r\n            <img [src]=\"this.imgPath\" class=\"card-img\" alt=\"...\" />\r\n            <div class=\"card-img-overlay\">\r\n              <h2 class=\"card-title\">{{ this.post.title }}</h2>\r\n            </div>\r\n          </div>\r\n          <p class=\"text\">\r\n            {{ this.post.body }}\r\n          </p>\r\n          <hr />\r\n          <p class=\"updated-text\">{{ this.post.daysAgo }}</p>\r\n          <p>\r\n            Date: {{ this.date }} - <a class=\"btn-link\" routerLink=\"/autor\">{{ this.author.name }}</a>\r\n          </p>\r\n    </div>\r\n    <div *ngIf=\"!this.hasPost\">\r\n      No se encontro el post :(\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -519,7 +597,7 @@ module.exports = "<div class=\"container-fluid details\">\r\n  <div class=\"card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".details {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n  .details img {\n    width: 100%;\n    height: 200px;\n    -webkit-filter: blur(0.6);\n            filter: blur(0.6);\n    -webkit-filter: segapia(0.9);\n            filter: segapia(0.9);\n    -webkit-filter: brightness(0.3);\n            filter: brightness(0.3); }\n  .details .card-title {\n    text-align: center; }\n  .details .card-title:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    -webkit-filter: brightness(1.2);\n            filter: brightness(1.2); }\n  .details .updated-text {\n    font-weight: bold; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGV0YWlscy9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGRldGFpbHNcXGRldGFpbHMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RldGFpbHMvQzpcXFVzZXJzXFxkYXZpZC5tYXRpYXMuYWNjdXJzb1xcRG9jdW1lbnRzXFxEYXZcXEFuZ3VsYXJcXFByb2plY3RvIGN1cnNvIGFuZ3VsYXIgLSBibG9nXFxCbG9nLXYyXFxCbG9nLXYyL3NyY1xcYXBwXFxfY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFlSSxXQ2pCYTtFRGtCYixnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUE7RUFqQnRCO0lBRU0sV0FBVztJQUNYLGFBQWE7SUFDYix5QkFBZ0I7WUFBaEIsaUJBQWdCO0lBQ2hCLDRCQUFtQjtZQUFuQixvQkFBbUI7SUFDbkIsK0JBQXNCO1lBQXRCLHVCQUFzQixFQUFBO0VBTjVCO0lBU00sa0JBQWtCLEVBQUE7RUFUeEI7SUFZTSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBQTtFQWI3QjtJQW1CTSxpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2RldGFpbHMvZGV0YWlscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uL2NvbG9ycyc7XHJcblxyXG4uZGV0YWlscyB7XHJcbiAgICBpbWcge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgZmlsdGVyOiBibHVyKC42KTtcclxuICAgICAgZmlsdGVyOiBzZWdhcGlhKC45KTtcclxuICAgICAgZmlsdGVyOiBicmlnaHRuZXNzKC4zKTtcclxuICAgIH1cclxuICAgIC5jYXJkLXRpdGxlIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLmNhcmQtdGl0bGU6aG92ZXIge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbiAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxLjIpO1xyXG4gICAgfVxyXG4gICAgY29sb3I6ICR0ZXh0LWNvbG9yO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIC51cGRhdGVkLXRleHQge1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIH1cclxufSIsIiR0ZXh0LWNvbG9yOiAjOTk5O1xyXG4kYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuJGJvcmRlci1jb2xvcjogI2U1ZTVlNTsiXX0= */"
+module.exports = ".details {\n  color: #999;\n  text-align: left;\n  font-style: italic; }\n  .details img {\n    width: 100%;\n    height: 200px;\n    -webkit-filter: blur(0.6);\n            filter: blur(0.6);\n    -webkit-filter: segapia(0.9);\n            filter: segapia(0.9);\n    -webkit-filter: brightness(0.3);\n            filter: brightness(0.3); }\n  .details .card-title {\n    text-align: center; }\n  .details .card-title:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    -webkit-filter: brightness(1.2);\n            filter: brightness(1.2); }\n  .details .updated-text {\n    font-weight: bold; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGV0YWlscy9DOlxcVXNlcnNcXEZ1bGwgU29sdXRpb25zXFxEZXNrdG9wXFxEYVxcdjNcXEJsb2ctdjIvc3JjXFxhcHBcXGRldGFpbHNcXGRldGFpbHMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RldGFpbHMvQzpcXFVzZXJzXFxGdWxsIFNvbHV0aW9uc1xcRGVza3RvcFxcRGFcXHYzXFxCbG9nLXYyL3NyY1xcYXBwXFxfY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFlSSxXQ2pCYTtFRGtCYixnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUE7RUFqQnRCO0lBRU0sV0FBVztJQUNYLGFBQWE7SUFDYix5QkFBZ0I7WUFBaEIsaUJBQWdCO0lBQ2hCLDRCQUFtQjtZQUFuQixvQkFBbUI7SUFDbkIsK0JBQXNCO1lBQXRCLHVCQUFzQixFQUFBO0VBTjVCO0lBU00sa0JBQWtCLEVBQUE7RUFUeEI7SUFZTSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBQTtFQWI3QjtJQW1CTSxpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2RldGFpbHMvZGV0YWlscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uL2NvbG9ycyc7XHJcblxyXG4uZGV0YWlscyB7XHJcbiAgICBpbWcge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgZmlsdGVyOiBibHVyKC42KTtcclxuICAgICAgZmlsdGVyOiBzZWdhcGlhKC45KTtcclxuICAgICAgZmlsdGVyOiBicmlnaHRuZXNzKC4zKTtcclxuICAgIH1cclxuICAgIC5jYXJkLXRpdGxlIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLmNhcmQtdGl0bGU6aG92ZXIge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbiAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxLjIpO1xyXG4gICAgfVxyXG4gICAgY29sb3I6ICR0ZXh0LWNvbG9yO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIC51cGRhdGVkLXRleHQge1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIH1cclxufSIsIiR0ZXh0LWNvbG9yOiAjOTk5O1xyXG4kYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuJGJvcmRlci1jb2xvcjogI2U1ZTVlNTsiXX0= */"
 
 /***/ }),
 
@@ -542,31 +620,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var DetailsComponent = /** @class */ (function () {
-    function DetailsComponent(activatedRoute, service) {
-        this.activatedRoute = activatedRoute;
+    function DetailsComponent(activeRoute, service) {
+        this.activeRoute = activeRoute;
         this.service = service;
-        var id;
-        // activatedRoute.paramMap.toPromise()<number>.then(a => {
-        //   this.id = a;
-        // })
+        this.hasPost = false;
+        this.imgPath = '../../assets/paisaje.jpg';
+        this.date = Date.now();
+        // this.postId = parseInt(activatedRoute.snapshot.paramMap.get('id'));
     }
     DetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.isLoading = true;
+        this.sub = this.activeRoute.params.subscribe(function (params) {
+            _this.id = +params['id']; // (+) converts string 'id' to a number
+        });
+        if (this.id) {
+            this.getPost(this.id);
+        }
+        console.log(this.post);
+    };
+    DetailsComponent.prototype.ngOnChanges = function (changes) {
+        // Cada vez que cambie un input 
+    };
+    DetailsComponent.prototype.getPost = function (id) {
+        var _this = this;
+        this.isLoading = true;
         this.service.getPost(this.id)
-            .then(function (p) {
-            _this.post = p;
+            .then(function (returnedPost) {
+            _this.post = returnedPost;
+            _this.post.daysAgo = _this.service.getDaysAgo();
         })
             .catch(function (error) {
             console.log(error);
         })
             .finally(function () {
             _this.isLoading = false;
+            if (_this.post) {
+                _this.hasPost = true;
+            }
         });
-        console.log(this.post);
-    };
-    DetailsComponent.prototype.ngOnChanges = function (changes) {
-        // Cada vez que cambie un input 
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
@@ -588,6 +680,85 @@ var DetailsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/form-author/form-author.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/form-author/form-author.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<form class=\"container-fluid\" (ngSubmit)=\"onSubmit(form)\" [formGroup]=\"form\">\r\n  <div class=\"form-group\">\r\n    <!-- VALIDACIONES-->\r\n    <div\r\n      class=\"input-group mb-3\"\r\n      [ngClass]=\"{ 'has-error': form.errors, 'has-success': !form.errors }\"\r\n    >\r\n      <div *ngIf=\"selectedAutor.invalid\" class=\"help-block\" style=\"color: #813838\">\r\n        <br />\r\n        <p>Please select an author!</p>\r\n      </div>\r\n      <div *ngIf=\"titulo.invalid\" class=\"help-block\" style=\"color: #813838\">\r\n        <br />\r\n        <p>Titulo is required!</p>\r\n      </div>\r\n      <div\r\n        *ngIf=\"contenido.invalid\"\r\n        class=\"help-block\"\r\n        style=\"color: #813838\"\r\n      >\r\n        <br />\r\n        <p>Please complete the body!</p>\r\n      </div>\r\n    </div>\r\n    <label for=\"autor\">Autor </label>\r\n    <select id=\"autor\" name=\"autorName\" [(ngModel)]=\"autorID\" required>\r\n      <option [value]=\"autor.id\" *ngFor=\"let autor of autores\">\r\n        {{ this.autor.username }}\r\n      </option>\r\n    </select>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"titulo\">Titulo </label>\r\n    <input\r\n      type=\"text\"\r\n      id=\"titulo\"\r\n      required\r\n      minlength=\"3\"\r\n      name=\"tituloName\"\r\n      [formControlName]=\"titulo\"\r\n    />\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <textarea\r\n      name=\"contenido\"\r\n      id=\"contenido\"\r\n      cols=\"30\"\r\n      rows=\"10\"\r\n      required\r\n      minlength=\"10\"\r\n      name=\"contenidoName\"\r\n      [formControlName]=\"contenido\"\r\n    >\r\n    </textarea>\r\n  </div>\r\n  <!-- <button type=\"submit\" [disabled]=\"form.invalid\" class=\"btn btn-primary\">Submit</button> -->\r\n  <button type=\"submit\" [disabled]=\"form.invalid\" class=\"btn btn-primary\">\r\n    Submit\r\n  </button>\r\n</form>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/form-author/form-author.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/form-author/form-author.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvcm0tYXV0aG9yL2Zvcm0tYXV0aG9yLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/form-author/form-author.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/form-author/form-author.component.ts ***!
+  \******************************************************/
+/*! exports provided: FormAuthorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormAuthorComponent", function() { return FormAuthorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/author-service */ "./src/app/post-service/author-service.ts");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
+/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Post */ "./src/app/Post.ts");
+
+
+
+
+
+var FormAuthorComponent = /** @class */ (function () {
+    function FormAuthorComponent(authorService, postService) {
+        this.authorService = authorService;
+        this.postService = postService;
+    }
+    FormAuthorComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authorService.getAutores().then(function (a) {
+            _this.autores = a;
+        });
+    };
+    FormAuthorComponent.prototype.onSubmit = function () {
+        var _post = new _Post__WEBPACK_IMPORTED_MODULE_4__["Post"](1, 50, this.titulo, this.contenido, 'han pasado 84 años');
+        var pusheo = this.postService.pushPost(_post);
+        if (pusheo) {
+            alert('Agregad con exito');
+        }
+        else {
+            alert('ERRORR!');
+        }
+    };
+    FormAuthorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-formauthor',
+            template: __webpack_require__(/*! ./form-author.component.html */ "./src/app/form-author/form-author.component.html"),
+            styles: [__webpack_require__(/*! ./form-author.component.scss */ "./src/app/form-author/form-author.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_author_service__WEBPACK_IMPORTED_MODULE_2__["AuthorService"],
+            _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__["PostService"]])
+    ], FormAuthorComponent);
+    return FormAuthorComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/form/form.component.html":
 /*!******************************************!*\
   !*** ./src/app/form/form.component.html ***!
@@ -595,7 +766,7 @@ var DetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=\"container-fluid\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n  <div class=\"form-group\">\r\n    <label for=\"autor\">Autor</label>\r\n    <select id=\"autor\" [(ngModel)]=\"autorID\">\r\n      <option \r\n        [value]=\"autor.id\" \r\n        *ngFor=\"let autor of autores\">\r\n        {{ autor.username }}\r\n      </option>\r\n    </select>\r\n    <small id=\"autorHelp\" class=\"form-text text-muted\">Seleccione autor</small>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"titulo\">Titulo</label>\r\n    <input type=\"text\" id=\"titulo\" [(ngModel)]=\"titulo\" />\r\n    <small id=\"titleHelp\" class=\"form-text text-muted\">Ingrese titulo</small>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <textarea\r\n      name=\"contenido\"\r\n      id=\"contenido\"\r\n      cols=\"30\"\r\n      rows=\"10\"\r\n      [(ngModel)]=\"contenido\"\r\n    >\r\n            .....\r\n        </textarea\r\n    >\r\n  </div>\r\n  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n</form>\r\n"
+module.exports = "<form class=\"container-fluid\" (ngSubmit)=\"onSubmit(form)\" [formGroup]=\"form\">\r\n  <div class=\"form-group\">\r\n    <!-- VALIDACIONES-->\r\n    <div\r\n      class=\"input-group mb-3\"\r\n      [ngClass]=\"{ 'has-error': form.errors, 'has-success': !form.errors }\"\r\n    >\r\n      <div *ngIf=\"selectedAutor.invalid\" class=\"help-block\" style=\"color: #813838\">\r\n        <br />\r\n        <p>Please select an author!</p>\r\n      </div>\r\n      <div *ngIf=\"titulo.invalid\" class=\"help-block\" style=\"color: #813838\">\r\n        <br />\r\n        <p>Titulo is required!</p>\r\n      </div>\r\n      <div\r\n        *ngIf=\"contenido.invalid\"\r\n        class=\"help-block\"\r\n        style=\"color: #813838\"\r\n      >\r\n        <br />\r\n        <p>Please complete the body!</p>\r\n      </div>\r\n    </div>\r\n    <label for=\"autor\">Autor </label>\r\n    <select id=\"autor\" name=\"autorName\" [(ngModel)]=\"autorID\" required>\r\n      <option [value]=\"autor.id\" *ngFor=\"let autor of autores\">\r\n        {{ this.autor.username }}\r\n      </option>\r\n    </select>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"titulo\">Titulo </label>\r\n    <input\r\n      type=\"text\"\r\n      id=\"titulo\"\r\n      required\r\n      minlength=\"3\"\r\n      name=\"tituloName\"\r\n      [formControlName]=\"titulo\"\r\n    />\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <textarea\r\n      name=\"contenido\"\r\n      id=\"contenido\"\r\n      cols=\"30\"\r\n      rows=\"10\"\r\n      required\r\n      minlength=\"10\"\r\n      name=\"contenidoName\"\r\n      [formControlName]=\"contenido\"\r\n    >\r\n    </textarea>\r\n  </div>\r\n  <!-- <button type=\"submit\" [disabled]=\"form.invalid\" class=\"btn btn-primary\">Submit</button> -->\r\n  <button type=\"submit\" [disabled]=\"form.invalid\" class=\"btn btn-primary\">\r\n    Submit\r\n  </button>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -623,12 +794,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _post_service_author_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../post-service/author-service */ "./src/app/post-service/author-service.ts");
+/* harmony import */ var _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../post-service/post-service */ "./src/app/post-service/post-service.ts");
+/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Post */ "./src/app/Post.ts");
+
+
 
 
 
 var FormComponent = /** @class */ (function () {
-    function FormComponent(authorService) {
+    function FormComponent(authorService, postService) {
         this.authorService = authorService;
+        this.postService = postService;
     }
     FormComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -637,6 +813,14 @@ var FormComponent = /** @class */ (function () {
         });
     };
     FormComponent.prototype.onSubmit = function () {
+        var _post = new _Post__WEBPACK_IMPORTED_MODULE_4__["Post"](1, 50, this.titulo, this.contenido, 'han pasado 84 años');
+        var pusheo = this.postService.pushPost(_post);
+        if (pusheo) {
+            alert('Agregad con exito');
+        }
+        else {
+            alert('ERRORR!');
+        }
     };
     FormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -644,7 +828,8 @@ var FormComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./form.component.html */ "./src/app/form/form.component.html"),
             styles: [__webpack_require__(/*! ./form.component.scss */ "./src/app/form/form.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_author_service__WEBPACK_IMPORTED_MODULE_2__["AuthorService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_post_service_author_service__WEBPACK_IMPORTED_MODULE_2__["AuthorService"],
+            _post_service_post_service__WEBPACK_IMPORTED_MODULE_3__["PostService"]])
     ], FormComponent);
     return FormComponent;
 }());
@@ -660,7 +845,7 @@ var FormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center principal\">\r\n    <div class=\"row justify-content-center\">\r\n      <div\r\n        class=\"jumbotron p-4 p-md-5 text-white rounded bg-dark col-12 col-md-12 col-sm-12\"\r\n      >\r\n        <h2>Bienvenido blog {{ title }}</h2>\r\n      </div>\r\n      <main class=\"blog-articles\">\r\n        <div *ngIf=\"![isLoading]\">Cargando...</div>\r\n        <div *ngIf=\"!![hasPosts] && [isLoading]\">\r\n            <app-article \r\n              *ngFor=\"let p of posts\" \r\n              [articlePost]=\"p\">\r\n            </app-article>\r\n        </div>\r\n        <img \r\n        src=\"#\" \r\n        alt=\"NO HAY POSTS :(\" \r\n        *ngIf=\"![hasPosts] && ![isLoading]\"\r\n        >\r\n      </main>\r\n    </div>\r\n  </div>\r\n</main>"
+module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-center principal\">\r\n    <div class=\"row justify-content-center\">\r\n      <div\r\n        class=\"jumbotron p-1 p-md-1 text-white rounded bg-dark col-12 col-md-12 col-sm-12\"\r\n      >\r\n        <h2>Bienvenido al blog {{ title }}</h2>\r\n      </div>\r\n      <main class=\"container-fluid blog-articles\">\r\n        <div *ngIf=\"![isLoading]\">\r\n            <img [src]=\"imgLoading\" alt=\"Loading...\" class=\"loading\"/>\r\n        </div>\r\n        <div *ngIf=\"!![hasPosts] && [isLoading]\">\r\n            <app-article \r\n            class=\"art\"\r\n              *ngFor=\"let p of posts\" \r\n              [postId]=\"p.id\">\r\n            </app-article>\r\n        </div>\r\n        <img \r\n        src=\"#\" \r\n        alt=\"NO HAY POSTS :(\" \r\n        *ngIf=\"![hasPosts] && ![isLoading]\"\r\n        >\r\n      </main>\r\n    </div>\r\n  </div>\r\n</main>"
 
 /***/ }),
 
@@ -671,7 +856,7 @@ module.exports = "<main class=\" md-5\">\r\n  <div class=\"container-fluid text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "main {\n  margin-bottom: 2rem; }\n\n.logo {\n  width: 150px; }\n\n.principal img {\n  height: 10rem;\n  width: 100%; }\n\n.blog-articles article {\n  display: inline-block;\n  margin: 1px 4px;\n  max-width: 33%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXGRhdmlkLm1hdGlhcy5hY2N1cnNvXFxEb2N1bWVudHNcXERhdlxcQW5ndWxhclxcUHJvamVjdG8gY3Vyc28gYW5ndWxhciAtIGJsb2dcXEJsb2ctdjJcXEJsb2ctdjIvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUIsRUFBQTs7QUFFckI7RUFDQSxZQUFZLEVBQUE7O0FBRVo7RUFFSSxhQUFhO0VBQ2IsV0FBVyxFQUFBOztBQUdmO0VBRUUscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYWluIHtcclxuICBtYXJnaW4tYm90dG9tOiAycmVtO1xyXG59XHJcbi5sb2dvIHtcclxud2lkdGg6IDE1MHB4O1xyXG59XHJcbi5wcmluY2lwYWwge1xyXG4gIGltZyB7XHJcbiAgICBoZWlnaHQ6IDEwcmVtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcbi5ibG9nLWFydGljbGVzIHtcclxuYXJ0aWNsZSB7IFxyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBtYXJnaW46IDFweCA0cHg7XHJcbiAgbWF4LXdpZHRoOiAzMyU7XHJcbn1cclxufSJdfQ== */"
+module.exports = "main {\n  margin-bottom: 2rem; }\n\n.logo {\n  width: 150px; }\n\n.principal img {\n  height: 10rem;\n  width: 100%; }\n\n.blog-articles article {\n  margin: 5px 0px;\n  display: block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXEZ1bGwgU29sdXRpb25zXFxEZXNrdG9wXFxEYVxcdjNcXEJsb2ctdjIvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUIsRUFBQTs7QUFFckI7RUFDQSxZQUFZLEVBQUE7O0FBRVo7RUFFSSxhQUFhO0VBQ2IsV0FBVyxFQUFBOztBQUdmO0VBRUUsZUFBZTtFQUNmLGNBQWMsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIm1haW4ge1xyXG4gIG1hcmdpbi1ib3R0b206IDJyZW07XHJcbn1cclxuLmxvZ28ge1xyXG53aWR0aDogMTUwcHg7XHJcbn1cclxuLnByaW5jaXBhbCB7XHJcbiAgaW1nIHtcclxuICAgIGhlaWdodDogMTByZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbn1cclxuLmJsb2ctYXJ0aWNsZXMge1xyXG4gIGFydGljbGUgeyBcclxuICBtYXJnaW46IDVweCAwcHg7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgfVxyXG59Il19 */"
 
 /***/ }),
 
@@ -694,23 +879,22 @@ __webpack_require__.r(__webpack_exports__);
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(postService) {
         this.postService = postService;
+        this.title = 'del curso de Angular.';
         this.hasPosts = false;
+        this.imgLoading = '../../assets/loading.gif';
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.loadPosts();
     };
-    // public setSelectedPost(id: number): void {
-    //   this.selectedPost = this.posts.filter(w => { w.ID === id })[0];
-    // }
     HomeComponent.prototype.loadPosts = function () {
         var _this = this;
         this.isLoading = true;
-        this.postService.GetAllPosts().then(function (p) {
-            _this.isLoading = false;
-            _this.posts = p.slice(0, 5);
+        this.postService.GetAllPosts()
+            .then(function (p) {
+            _this.posts = p; //.slice(0,5);
         })
-            .catch(function (er) {
-            alert('ERROR');
+            .catch(function (error) {
+            console.log(error);
         })
             .finally(function () {
             _this.isLoading = false;
@@ -791,20 +975,55 @@ __webpack_require__.r(__webpack_exports__);
 var PostService = /** @class */ (function () {
     function PostService(http) {
         this.http = http;
-        this.urlPosts = 'https://jsonplaceholder.typicode.com/posts/';
+        this.urlPosts = 'https://jsonplaceholder.typicode.com/posts';
         this.urlUsers = 'https://jsonplaceholder.typicode.com/users';
         this.urlPhotos = 'https://jsonplaceholder.typicode.com/photos';
+        this.posts = [];
+        this.lastId = 100;
     }
     PostService.prototype.getPost = function (d) {
-        return this.http.get(this.urlPosts + "/" + d).toPromise();
+        var _this = this;
+        //  return this.http.get<IPost>(`${this.urlPosts}/${d}`).toPromise();
+        return this.http.get(this.urlPosts + "/" + d)
+            .toPromise().then(function (posts) {
+            if (!posts) {
+                return _this.posts.filter(function (p) {
+                    p.id === d;
+                })[0];
+            }
+            else {
+                return posts;
+            }
+        });
     };
     PostService.prototype.GetAllPosts = function () {
-        return this.http.get(this.urlPosts).toPromise();
+        var _this = this;
+        return this.http
+            .get(this.urlPosts)
+            .toPromise()
+            .then(function (po) {
+            return po.slice(0, 3).concat(_this.posts);
+        });
     };
-    PostService.prototype.GetAllPostsFromAuthor = function (authorID) {
-        var authorPosts;
-        // authorPosts = this.GetAllPosts();
-        return authorPosts.filter(function (p) { p.userId === authorID; });
+    PostService.prototype.getDaysAgo = function () {
+        var _daysAgo;
+        var _days = Math.round((Math.random() * 100));
+        _daysAgo = "Publishied " + _days + " ago.";
+        return _daysAgo;
+    };
+    PostService.prototype.pushPost = function (_post) {
+        try {
+            _post.id = this.getLastId();
+            this.posts.push(_post);
+            return true;
+        }
+        catch (error) {
+            return false;
+        }
+    };
+    PostService.prototype.getLastId = function () {
+        this.lastId = this.lastId + 1;
+        return this.lastId;
     };
     PostService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
@@ -869,7 +1088,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n      <a class=\"navbar-brand\" href=\"#\">BLOG</a>\r\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"\r\n          aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse justify-content-between\" id=\"navbarNav\">\r\n          <ul class=\"navbar-nav\">\r\n              <li class=\"nav-item active\">\r\n                  <a [routerLink]=\"[ '/home' ]\" \r\n                  routerLinkActive=\"active\"\r\n                  class=\"nav-link\">\r\n                  Home<span class=\"sr-only\">(current)</span>\r\n                </a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a [routerLink]=\"[ '/about' ]\"\r\n                  class=\"nav-link\">\r\n                  About Us\r\n                </a>\r\n              </li>\r\n          </ul>\r\n          <ul class=\"navbar-nav\">\r\n              <li class=\"nav-items\">\r\n                  <input type=\"text\" class=\"mr-1 input\" />\r\n                  <button class=\"btn btn-primary\">Search</button>\r\n              </li>\r\n          </ul>\r\n      </div>\r\n  </nav>\r\n</header>"
+module.exports = "<header>\r\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n      <a class=\"navbar-brand\" href=\"#\">BLOG</a>\r\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"\r\n          aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse justify-content-between\" id=\"navbarNav\">\r\n          <ul class=\"navbar-nav\">\r\n              <li class=\"nav-item active\">\r\n                  <a [routerLink]=\"[ '/home' ]\" \r\n                  routerLinkActive=\"active\"\r\n                  class=\"nav-link\">\r\n                  Home<span class=\"sr-only\">(current)</span>\r\n                </a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a [routerLink]=\"[ '/about' ]\"\r\n                  class=\"nav-link\">\r\n                  About Us\r\n                </a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                    <a [routerLink]=\"[ '/form' ]\"\r\n                    class=\"nav-link\">\r\n                    Form - Posts\r\n                  </a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a [routerLink]=\"[ '/newAuthor' ]\"\r\n                  class=\"nav-link\">\r\n                  Form - Authors\r\n                </a>\r\n            </li>\r\n          </ul>\r\n          <ul class=\"navbar-nav\">\r\n              <li class=\"nav-items\">\r\n                  <input type=\"text\" class=\"mr-1 input\" />\r\n                  <button class=\"btn btn-primary\">Search</button>\r\n              </li>\r\n          </ul>\r\n      </div>\r\n  </nav>\r\n</header>"
 
 /***/ }),
 
@@ -967,7 +1186,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\david.matias.accurso\Documents\Dav\Angular\Projecto curso angular - blog\Blog-v2\Blog-v2\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Full Solutions\Desktop\Da\v3\Blog-v2\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -25,6 +25,10 @@ const routes: Routes = [
     component: FormComponent
   },
   {
+    path: 'newAuthor',
+    component: FormComponent
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
