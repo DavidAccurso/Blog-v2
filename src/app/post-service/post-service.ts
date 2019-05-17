@@ -8,10 +8,9 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  urlPosts: string = 'https://jsonplaceholder.typicode.com/posts/';
+  urlPosts: string = 'https://jsonplaceholder.typicode.com/posts';
   urlUsers: string = 'https://jsonplaceholder.typicode.com/users';
   urlPhotos: string = 'https://jsonplaceholder.typicode.com/photos';
-  post: IPost[];
 
   public getPost(d: number): Promise<IPost> {
      return this.http.get<IPost>(`${this.urlPosts}/${d}`).toPromise();

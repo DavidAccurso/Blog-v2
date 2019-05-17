@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input,
+  OnChanges, SimpleChange,
+  SimpleChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { PostService } from '../post-service/post-service';
 import { IPost } from '../IPost';
@@ -11,17 +13,20 @@ import { IPost } from '../IPost';
 export class DetailsComponent implements OnInit, OnChanges {
 
   constructor(
-    private activatedRoute : ActivatedRoute,
-    private service: PostService) {
-    let id: number;
-    // activatedRoute.paramMap.toPromise()<number>.then(a => {
-    //   this.id = a;
-    // })
-   }
+
+    private activatedRoute: ActivatedRoute,
+    private service: PostService) 
+    {
+      // activatedRoute.paramMap
+      // .toPromise()<Number>
+      // .then(a => {
+      //   this.postId = a;
+      // })   
+    }
 
    @Input()
    public id: number;
-
+  postId: number;
   post: IPost;
   isLoading: boolean;
 

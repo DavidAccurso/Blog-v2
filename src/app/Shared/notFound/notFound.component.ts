@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class notFoundComponent implements OnInit {
 
   constructor() { 
-    this.imgPath = '../../assets/douh.png';
+    this.imgPath = '../../assets/difficultes.jpg';
   }
 
   ngOnInit() {
@@ -21,5 +21,4 @@ export class notFoundComponent implements OnInit {
   public set imgPath(v : string) {
     this._imgPath = v;
   }
-  
 }

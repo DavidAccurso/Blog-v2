@@ -9,23 +9,42 @@ import { IPost } from '../IPost';
 })
 export class ArticleComponent implements OnInit {
 
-  title = 'default Title';
+  title: string;
   imgPath = '../../assets/defaultUser.jpg';
   daysAgo = '21 days ago.';
-  text = 'Lorem Impsumasdaskdjasdlkadslkasdkjaskljadsk';
+  text: string;
   post: IPost;
   public id: number;
+  public isLoading: boolean = false;
 
   @Input()
-  public articlePost: IPost;
+  public postId: number;
 
   constructor(
     private postService: PostService
   ) { }
+
   ngOnInit() {
-    this.post = this.articlePost;
-    if (this.post) {
-      this.id = this.post.id;
+    if (this.postId) {
+      this.id = this.postId;
+
+      this.postService.getPost(this.id)
+      .then(returnedPost => {
+        this.post = returnedPost;
+      })
+      .catch(error => {
+        console.log(error);
+      })
+      .finally(() => {
+        this.isLoading = false;
+      });
+
+      // this.getPost(this.id);
     }
+  }
+
+  private getPost(id: number) {
+
+
   }
 }
