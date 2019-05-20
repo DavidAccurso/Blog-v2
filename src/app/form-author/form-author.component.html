@@ -1,60 +1,23 @@
-<form class="container-fluid" (ngSubmit)="onSubmit(form)" [formGroup]="form">
+<form class="container-fluid" (ngSubmit)="onSubmit(ngForm)" [formGroup]="ngForm">
+
   <div class="form-group">
-    <!-- VALIDACIONES-->
-    <div
-      class="input-group mb-3"
-      [ngClass]="{ 'has-error': form.errors, 'has-success': !form.errors }"
-    >
-      <div *ngIf="selectedAutor.invalid" class="help-block" style="color: #813838">
-        <br />
-        <p>Please select an author!</p>
-      </div>
-      <div *ngIf="titulo.invalid" class="help-block" style="color: #813838">
-        <br />
-        <p>Titulo is required!</p>
-      </div>
-      <div
-        *ngIf="contenido.invalid"
-        class="help-block"
-        style="color: #813838"
-      >
-        <br />
-        <p>Please complete the body!</p>
-      </div>
-    </div>
-    <label for="autor">Autor </label>
-    <select id="autor" name="autorName" [(ngModel)]="autorID" required>
-      <option [value]="autor.id" *ngFor="let autor of autores">
-        {{ this.autor.username }}
-      </option>
-    </select>
+    <label for="titulo">Nombre </label>
+    <input type="text" name="nombre" formControlName="nombre" />
   </div>
   <div class="form-group">
-    <label for="titulo">Titulo </label>
-    <input
-      type="text"
-      id="titulo"
-      required
-      minlength="3"
-      name="tituloName"
-      [formControlName]="titulo"
-    />
+    <label for="titulo">Username </label>
+    <input type="text" name="usuario" formControlName="usuario" />
   </div>
   <div class="form-group">
-    <textarea
-      name="contenido"
-      id="contenido"
-      cols="30"
-      rows="10"
-      required
-      minlength="10"
-      name="contenidoName"
-      [formControlName]="contenido"
-    >
-    </textarea>
+    <label for="titulo">Email </label>
+    <input type="text" name="email" formControlName="email" />
   </div>
-  <!-- <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button> -->
-  <button type="submit"  class="btn btn-primary">
+
+  <div class="form-group" *ngIf="ngForm.invalid">
+      <button  type="button" class="btn btn-link" (onclick)="this.showError('error vite')">Show errors</button>
+  </div>
+
+  <button type="submit" [disabled]="this.ngForm.invalid" class="btn btn-primary">
     Submit
   </button>
 </form>

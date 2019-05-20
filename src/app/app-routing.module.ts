@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { notFoundComponent } from './Shared/notFound/notFound.component';
 import { AboutComponent } from './about/about.component';
 import { FormComponent } from './form/form.component';
+import { FormAuthorComponent } from './form-author/form-author.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: 'newAuthor',
-    component: FormComponent
+    component: FormAuthorComponent
   },
   {
     path: 'home',

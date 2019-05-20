@@ -20,5 +20,4 @@ export class Post implements IPost {
         this.body = body;
         this.daysAgo = daysAgo;
     }
-
 }

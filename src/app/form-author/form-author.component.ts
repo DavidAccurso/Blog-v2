@@ -3,7 +3,8 @@ import { IAutores } from '../IAutores';
 import { AuthorService } from '../post-service/author-service';
 import { PostService } from '../post-service/post-service';
 import { Post } from '../Post';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-formauthor',
@@ -14,42 +15,66 @@ export class FormAuthorComponent implements OnInit {
 
   public autores: IAutores[];
   public autorID: number;
-  public titulo: string;
-  public contenido: string;
-  public selectedAutor: IAutores;
-  public form: FormGroup;
+  public submitted: boolean = false;
+  public ngForm: FormGroup;
+
+  get nombre(): any {
+    return this.ngForm.get('nombre');
+  }
+  get usuario(): any {
+    return this.ngForm.get('usuario');
+  }
+  get email(): any {
+    return this.ngForm.get('email');
+  }
 
   constructor(
     private authorService: AuthorService,
     private postService: PostService,
-    private fb: FormBuilder
-  ) {
-      this.form = new FormGroup({
-        name: new FormControl('', [
-          Validators.required,
-          Validators.minLength(5)
-        ])
-      });
-      this.form = this.fb.group({
-        nombre: this.fb.control('', [
-          Validators.required
-        ])
-      })
+    private toastr: ToastrService
+    ) {
+      this.initializeForm();
    }
-  
+
   ngOnInit() {
     this.authorService.getAutores().then(a => {
       this.autores = a;
-    })
+    });
   }
-  onSubmit(){
-    let _post = new Post(1,50,this.titulo, this.contenido, 'han pasado 84 años'); 
-    let pusheo = this.postService.pushPost(_post);
+
+  initializeForm() {
+    this.ngForm = new FormGroup({
+      nombre: new FormControl('', [
+        Validators.required
+      ]),
+      usuario: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5)
+      ]),
+      email: new FormControl('', [
+        Validators.required,
+        Validators.email
+      ])
+    });
+  }
+
+  onSubmit() {
+    const post = new Post(1, this.postService.getLastId() ,
+    this.ngForm.get('titulo').value, this.ngForm.get('contenido').value, 'han pasado 84 años');
+
+    const pusheo = this.postService.pushPost(post);
     if (pusheo) {
-      alert('Agregad con exito')
+      this.showSuccess();
     } else {
-      alert('ERRORR!');
+      this.showError('le pifiaste amigo :(');
     }
-    // para acceder al valor desde html this.form.get('nombre').value;
-  } 
+  }
+
+  showSuccess() {
+    this.toastr.success('Agregado con exito :)', 'YEAH!', { timeOut: 10000 });
+  }
+
+  showError(error: string = 'void'): void {
+    this.toastr.error('Error with: ' + error, 'WHATDAFACK');
+  }
 }
