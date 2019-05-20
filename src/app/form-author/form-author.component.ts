@@ -5,6 +5,7 @@ import { PostService } from '../post-service/post-service';
 import { Post } from '../Post';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { Autor } from '../Autor';
 
 @Component({
   selector: 'app-formauthor',
@@ -59,14 +60,16 @@ export class FormAuthorComponent implements OnInit {
   }
 
   onSubmit() {
-    const post = new Post(1, this.postService.getLastId() ,
-    this.ngForm.get('titulo').value, this.ngForm.get('contenido').value, 'han pasado 84 años');
+    const nombre = this.ngForm.get('nombre').value;
+    const email = this.ngForm.get('email').value;
+    const usuario = this.ngForm.get('usuario').value;
+    const author = new Autor(nombre, email, usuario, this.authorService.getLastId());
 
-    const pusheo = this.postService.pushPost(post);
+    const pusheo = this.authorService.pushAuthor(author);
     if (pusheo) {
       this.showSuccess();
     } else {
-      this.showError('le pifiaste amigo :(');
+      this.showError('le pifiaste :(');
     }
   }
 

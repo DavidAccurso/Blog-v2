@@ -1,23 +1,42 @@
-<form class="container-fluid" (ngSubmit)="onSubmit(ngForm)" [formGroup]="ngForm">
-
+<form
+  class="container-fluid"
+  (ngSubmit)="onSubmit(ngForm)"
+  [formGroup]="ngForm"
+>
   <div class="form-group">
     <label for="titulo">Nombre </label>
     <input type="text" name="nombre" formControlName="nombre" />
+    <span
+      class="text-danger"
+      *ngIf="
+        this.ngForm.get('nombre').dirty && this.ngForm.get('nombre').invalid"
+      >Please check nombre</span
+    >
   </div>
   <div class="form-group">
     <label for="titulo">Username </label>
     <input type="text" name="usuario" formControlName="usuario" />
+    <span
+      class="text-danger"
+      *ngIf="
+        this.ngForm.get('usuario').dirty && this.ngForm.get('usuario').invalid"
+      >Please check usuario</span
+    >
   </div>
   <div class="form-group">
     <label for="titulo">Email </label>
     <input type="text" name="email" formControlName="email" />
+    <span
+      class="text-danger"
+      *ngIf="this.ngForm.get('email').dirty && this.ngForm.get('email').invalid"
+      >Please check email</span
+    >
   </div>
-
-  <div class="form-group" *ngIf="ngForm.invalid">
-      <button  type="button" class="btn btn-link" (onclick)="this.showError('error vite')">Show errors</button>
-  </div>
-
-  <button type="submit" [disabled]="this.ngForm.invalid" class="btn btn-primary">
+  <button
+    type="submit"
+    [disabled]="this.ngForm.invalid"
+    class="btn btn-primary"
+  >
     Submit
   </button>
 </form>
