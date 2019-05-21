@@ -4,27 +4,28 @@ import { ActivatedRoute } from '@angular/router'
 import { PostService } from '../post-service/post-service';
 import { IPost } from '../IPost';
 import { IAutores } from '../IAutores';
+import { AuthorService } from '../post-service/author-service';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class DetailsComponent implements OnInit, OnChanges {
+export class DetailsComponent implements OnInit {
 
   constructor(
-
     private activeRoute: ActivatedRoute,
-    private service: PostService) 
-    {
-      // this.postId = parseInt(activatedRoute.snapshot.paramMap.get('id'));
-    }
+    private postService: PostService,
+    private authorService: AuthorService
+    ) 
+    { }
 
    @Input()
   public id: number;
   postId: number;
   post: IPost;
   author: IAutores;
+  isLoadingAuthor: boolean;
   isLoading: boolean;
   hasPost = false;
   imgPath: string = '../../assets/paisaje.jpg';
@@ -37,33 +38,34 @@ export class DetailsComponent implements OnInit, OnChanges {
     this.sub = this.activeRoute.params.subscribe(params => {
       this.id = +params['id']; // (+) converts string 'id' to a number
    });
-
     if(this.id){
-      this.getPost(this.id);
+       this.getPost(this.id);
     }
-
     console.log(this.post);
-  }
-  public ngOnChanges(changes: SimpleChanges): void{
-    // Cada vez que cambie un input 
   }
 
   private getPost(id: number) {
     this.isLoading = true;
-    this.service.getPost(this.id)
+    this.postService.getPost(this.id)
     .then(returnedPost => {
       this.post = returnedPost;
-      // this.author = this.aut
-      this.post.daysAgo = this.service.getDaysAgo();
+      this.post.daysAgo = this.postService.getDaysAgo();
     })
     .catch(error => {
       console.log(error);
     })
     .finally(() => {
       this.isLoading = false;
-      if(this.post){
-        this.hasPost = true;
-      }
     });
+    if (this.post){
+      this.hasPost = true;
+      this.getAuthor();
+    }
+  }
+  private getAuthor(): void {
+    this.isLoadingAuthor = true;
+    this.authorService.getAutor(this.post.userId).then(author =>{
+      this.author = author;
+    })
   }
 }

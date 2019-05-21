@@ -16,6 +16,15 @@ export class AuthorService {
       return autores.concat(this.listaLocalAutores);
     })
   }
+  public getAutor(id: number) :  Promise<IAutores> {
+    return this.http.get<IAutores[]>(this.urlUsers).toPromise().then(autores => {
+      let resultado: IAutores[] = autores.concat(this.listaLocalAutores);
+
+      return resultado.filter(authorFiltrado => {
+        authorFiltrado.id === id
+      })[0];
+    })
+  }
   public getInfo(id: number): string {
       return 'INFO DEL AUTHOR HARDCODEADAA POR QUE NO TENGO INTERNET SOY POBRE :(';
   }
