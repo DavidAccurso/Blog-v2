@@ -53,6 +53,7 @@ export class DetailsComponent implements OnInit, OnChanges {
     this.service.getPost(this.id)
     .then(returnedPost => {
       this.post = returnedPost;
+      // this.author = this.aut
       this.post.daysAgo = this.service.getDaysAgo();
     })
     .catch(error => {

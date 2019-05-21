@@ -7,7 +7,7 @@ export class AuthorService {
 
   urlUsers: string = 'https://jsonplaceholder.typicode.com/users';
   listaLocalAutores: IAutores[] = [];
-  lastId: number = 30;
+  private lastId: number = 30;
 
   constructor(private http: HttpClient) { }
 

@@ -11,12 +11,12 @@ export class PostService {
   urlUsers: string = 'https://jsonplaceholder.typicode.com/users';
   urlPhotos: string = 'https://jsonplaceholder.typicode.com/photos';
   posts: IPost[] = [];
-  lastId: number = 100;
+  private lastId: number = 100;
 
   public getPost(d: number): Promise<IPost> {
     //  return this.http.get<IPost>(`${this.urlPosts}/${d}`).toPromise();
     return this.http.get<IPost>(`${this.urlPosts}/${d}`)
-    .toPromise<IPost>().then(posts => {
+    .toPromise<IPost>().catch(posts => {
       if(!posts) {
         return this.posts.filter(p => {
           p.id === d
@@ -25,6 +25,11 @@ export class PostService {
         return posts;
       }
     })
+    // return this.GetAllPosts().then(posts => {
+    //       return this.posts.filter(p => {
+    //         p.id === d
+    //       })[0];
+    //     });
   }
 
   public GetAllPosts(): Promise<IPost[]> {

@@ -1,59 +1,54 @@
-<form class="container-fluid" (ngSubmit)="onSubmit(form)" [(ngModel)]="form">
+<form class="container-fluid" (ngSubmit)="onSubmit(form)" #form="ngForm">
   <div class="form-group">
-    <!-- VALIDACIONES-->
-    <div
-      class="input-group mb-3"
-      [ngClass]="{ 'has-error': form.errors, 'has-success': !form.errors }"
-    >
-      <div *ngIf="selectedAutor.invalid" class="help-block" style="color: #813838">
-        <br />
-        <p>Please select an author!</p>
-      </div>
-      <div *ngIf="titulo.invalid" class="help-block" style="color: #813838">
-        <br />
-        <p>Titulo is required!</p>
-      </div>
-      <div
-        *ngIf="contenido.invalid"
-        class="help-block"
-        style="color: #813838"
-      >
-        <br />
-        <p>Please complete the body!</p>
-      </div>
-    </div>
     <label for="autor">Autor </label>
-    <select id="autor" name="autorName" [(ngModel)]="autorID" required>
+    <select 
+    name="autorName" 
+    [(ngModel)]="autorID" 
+    required 
+    #autor="ngModel">
       <option [value]="autor.id" *ngFor="let autor of autores">
         {{ this.autor.username }}
       </option>
     </select>
+    <span
+      class="text-danger"
+      *ngIf="autor.invalid && autor.dirty"
+      >Please select an author</span
+    >  
   </div>
   <div class="form-group">
-    <label for="titulo">Titulo </label>
+    <label for="titulo">Titulo</label>
     <input
       type="text"
-      id="titulo"
       required
       minlength="3"
       name="tituloName"
-      [formControlName]="titulo"
+      [(ngModel)]="titulo"
+      #titulo1="ngModel"
     />
+    <span
+    class="text-danger"
+    *ngIf="titulo1.invalid && titulo1.dirty"
+    >Please check titulo!</span
+  >  
   </div>
   <div class="form-group">
     <textarea
       name="contenido"
-      id="contenido"
       cols="30"
       rows="10"
       required
       minlength="10"
-      name="contenidoName"
-      [formControlName]="contenido"
+      [(ngModel)]="contenido"
+      #contenido1="ngModel"
     >
     </textarea>
+    <span
+    class="text-danger"
+    *ngIf="contenido1.invalid && contenido1.dirty"
+    >Please check contenido!</span
+  >   
   </div>
-  <!-- <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button> -->
   <button type="submit" [disabled]="form.invalid" class="btn btn-primary">
     Submit
   </button>
