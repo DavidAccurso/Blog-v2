@@ -79,5 +79,6 @@ export class FormAuthorComponent implements OnInit {
 
   showError(error: string = 'void'): void {
     this.toastr.error('Error with: ' + error, 'WHATDAFACK');
+    this.toastr.show
   }
 }

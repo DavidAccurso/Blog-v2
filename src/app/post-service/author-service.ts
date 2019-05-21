@@ -18,11 +18,9 @@ export class AuthorService {
   }
   public getAutor(id: number) :  Promise<IAutores> {
     return this.http.get<IAutores[]>(this.urlUsers).toPromise().then(autores => {
-      let resultado: IAutores[] = autores.concat(this.listaLocalAutores);
-
-      return resultado.filter(authorFiltrado => {
-        authorFiltrado.id === id
-      })[0];
+      return autores.concat(this.listaLocalAutores).find(authorFiltrado => {
+        return authorFiltrado.id === id
+      });
     })
   }
   public getInfo(id: number): string {
